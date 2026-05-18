@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dutch Museums — Children's Activities Network</title>
+
+  <!-- ── FONTS ────────────────────────────────────────────────
+       DM Sans for UI, DM Serif Display for the header title.
+       Swap these for any Google Fonts pair you prefer.       -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── RESET & BASE ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --museum-fill:   #2A6496;   /* blue circles for museums    */
+      --criteria-fill: #C0512F;   /* coral squares for criteria  */
+      --link-color:    #D0CCC2;   /* default edge colour         */
+      --highlight:     #F0A500;   /* active / selected edge      */
+      --bg:            #F7F5F0;   /* page background             */
+      --dark:          #1D2B3A;   /* header / dark elements      */
+      --sidebar-w:     270px;     /* sidebar width               */
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: #1a1a1a;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HEADER ────────────────────────────────────────────── */
+    header {
+      padding: 12px 24px;
+      background: var(--dark);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      border-bottom: 2px solid rgba(255,255,255,0.08);
+    }
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+    header p { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 3px; }
+    .header-right { font-size: 11px; color: rgba(255,255,255,0.35); text-align: right; line-height: 1.6; }
+
+    /* ── MAIN LAYOUT ───────────────────────────────────────── */
+    .app { display: flex; flex: 1; overflow: hidden; }
+
+    /* ── SIDEBAR ───────────────────────────────────────────── */
+    .sidebar {
+      width: var(--sidebar-w);
+      flex-shrink: 0;
+      background: white;
+      border-right: 1px solid #E5E3DC;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-section { padding: 16px 16px 0; margin-bottom: 18px; }
+    .sidebar-section:last-child { margin-bottom: 16px; }
+
+    .section-title {
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    /* ── LEGEND ────────────────────────────────────────────── */
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 12.5px;
+      color: #444;
+      margin-bottom: 7px;
+    }
+    .legend-circle { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0; }
+    .legend-square { width: 11px; height: 11px; border-radius: 2px; flex-shrink: 0; }
+    .legend-line {
+      width: 26px; height: 2px;
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
+
+    /* ── CITY BADGES ──────────────────────────────────────── */
+    /* These mirror the city colour scale used on the museum nodes */
+    .city-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin: 2px 2px 0 0;
+    }
+    .city-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+    /* ── FILTER BUTTONS ─────────────────────────────────────
+       One button per criterion — click to highlight museums
+       that share that criterion.                             */
+    .filter-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-family: 'DM Sans', sans-serif;
+      background: none;
+      border: 1px solid #E8E6DE;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 4px;
+      color: #444;
+      transition: background 0.12s, border-color 0.12s;
+    }
+    .filter-btn:hover  { background: #F7F5F0; border-color: #C8C5BC; }
+    .filter-btn.active { background: var(--dark); color: white; border-color: var(--dark); }
+    .filter-btn.clear  { color: #aaa; font-style: italic; }
+
+    /* ── INFO PANEL ─────────────────────────────────────────
+       Shown at the bottom of the sidebar when you click a node */
+    .info-box {
+      background: #F7F5F0;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 12px;
+      color: #555;
+      min-height: 90px;
+    }
+    .info-box h3 { font-size: 14px; font-weight: 600; color: #1a1a1a; margin-bottom: 3px; }
+    .info-box .sub { font-size: 11px; color: #888; margin-bottom: 8px; }
+    .info-tag {
+      display: inline-block;
+      background: #E2EEF5;
+      color: #1A567A;
+      font-size: 10px;
+      font-weight: 500;
+      padding: 2px 7px;
+      border-radius: 10px;
+      margin: 2px 2px 0 0;
+    }
+    .info-tag.criteria-tag { background: #F6E8E3; color: #7A3218; }
+
+    /* ── LAYOUT SLIDERS ─────────────────────────────────────
+       Adjusts the physics simulation in real time.           */
+    .slider-row { margin-bottom: 10px; }
+    .slider-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #777;
+      margin-bottom: 3px;
+    }
+    input[type=range] { width: 100%; cursor: pointer; }
+
+    /* ── GRAPH CANVAS ───────────────────────────────────────── */
+    .graph-area { flex: 1; position: relative; overflow: hidden; }
+    svg#graph { width: 100%; height: 100%; }
+
+    /* ── NODE STYLES ────────────────────────────────────────── */
+    /* Museum nodes — circles, size = number of connections     */
+    .node-museum circle {
+      stroke: white;
+      stroke-width: 2.5;
+      cursor: pointer;
+      transition: filter 0.15s;
+    }
+    .node-museum:hover circle { filter: brightness(1.18) drop-shadow(0 0 4px rgba(0,0,0,0.2)); }
+
+    /* Criteria nodes — rounded squares                         */
+    .node-criteria rect {
+      fill: var(--criteria-fill);
+      stroke: white;
+      stroke-width: 1.5;
+      cursor: pointer;
+      transition: filter 0.15s;
+    }
+    .node-criteria:hover rect { filter: brightness(1.15) drop-shadow(0 0 4px rgba(0,0,0,0.15)); }
+
+    /* Labels beneath nodes                                      */
+    .node-label {
+      font-family: 'DM Sans', sans-serif;
+      pointer-events: none;
+      fill: #222;
+    }
+
+    /* ── LINK STYLES ────────────────────────────────────────── */
+    .link {
+      stroke: var(--link-color);
+      stroke-width: 1.2;
+      stroke-linecap: round;
+      transition: stroke 0.2s, stroke-width 0.2s, opacity 0.2s;
+    }
+    .link.highlighted { stroke: var(--highlight); stroke-width: 2.5; opacity: 1 !important; }
+    .link.faded       { opacity: 0.07; }
+
+    /* Fading non-selected nodes                                 */
+    .node-museum.faded  circle,
+    .node-museum.faded  text,
+    .node-criteria.faded rect,
+    .node-criteria.faded text { opacity: 0.12; transition: opacity 0.2s; }
+
+    /* ── TOOLTIP ────────────────────────────────────────────── */
+    #tooltip {
+      position: absolute;
+      background: var(--dark);
+      color: white;
+      padding: 7px 12px;
+      border-radius: 7px;
+      font-size: 12px;
+      line-height: 1.5;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.12s;
+      max-width: 220px;
+      z-index: 200;
+      white-space: nowrap;
+    }
+
+    /* ── STATS BAR (top-right of graph area) ────────────────── */
+    .stats-bar {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      font-size: 11px;
+      color: #aaa;
+      display: flex;
+      gap: 14px;
+      background: rgba(255,255,255,0.75);
+      padding: 5px 10px;
+      border-radius: 20px;
+      backdrop-filter: blur(4px);
+      border: 1px solid #E5E3DC;
+    }
+    .stats-bar span { color: var(--dark); font-weight: 600; }
+
+    /* ── ZOOM CONTROLS ───────────────────────────────────────── */
+    .zoom-controls {
+      position: absolute;
+      bottom: 20px;
+      right: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .zoom-btn {
+      width: 32px; height: 32px;
+      background: white;
+      border: 1px solid #E5E3DC;
+      border-radius: 7px;
+      font-size: 17px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #444;
+      transition: background 0.12s;
+    }
+    .zoom-btn:hover { background: #F0EDE5; }
+
+    /* ── INSTRUCTIONS HINT ───────────────────────────────────── */
+    .hint {
+      position: absolute;
+      bottom: 20px;
+      left: 16px;
+      font-size: 10.5px;
+      color: #bbb;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════
+     HEADER
+     ════════════════════════════════════════════════════════════ -->
+<header>
+  <div>
+    <h1>Dutch Museums — Children's Activities Network</h1>
+    <p>Click a node · scroll to zoom · drag to pan · use filters to compare</p>
+  </div>
+  <div class="header-right">
+    Cultural Data Science Research<br>
+    Edit the DATABASE section in the &lt;script&gt; to update your data
+  </div>
+</header>
+
+<div class="app">
+
+  <!-- ══════════════════════════════════════════════════════════
+       SIDEBAR
+       ══════════════════════════════════════════════════════════ -->
+  <aside class="sidebar">
+
+    <!-- Legend -->
+    <div class="sidebar-section">
+      <div class="section-title">Legend</div>
+      <div class="legend-item">
+        <div class="legend-circle" style="background:var(--museum-fill)"></div>
+        Museum (size = no. of activities)
+      </div>
+      <div class="legend-item">
+        <div class="legend-square" style="background:var(--criteria-fill)"></div>
+        Activity / Criterion
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background:var(--link-color)"></div>
+        Offers this activity
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background:var(--highlight)"></div>
+        Selected connection
+      </div>
+      <!-- City colour key — generated by JS below -->
+      <div class="section-title" style="margin-top:12px">City colour</div>
+      <div id="city-legend"></div>
+    </div>
+
+    <!-- Filter buttons — one per criterion -->
+    <div class="sidebar-section">
+      <div class="section-title">Filter by criterion</div>
+      <div id="filter-buttons"></div>
+    </div>
+
+    <!-- Info panel — fills on click -->
+    <div class="sidebar-section">
+      <div class="section-title">Selected node</div>
+      <div class="info-box" id="info-panel">
+        <p style="color:#bbb;font-style:italic;font-size:12px">
+          Click any node to see its details and connections
+        </p>
+      </div>
+    </div>
+
+    <!-- Layout sliders -->
+    <div class="sidebar-section">
+      <div class="section-title">Layout physics</div>
+      <div class="slider-row">
+        <div class="slider-label">
+          <span>Link strength</span>
+          <span id="ls-val">0.30</span>
+        </div>
+        <input type="range" id="link-strength" min="0.01" max="1" step="0.01" value="0.3">
+      </div>
+      <div class="slider-row">
+        <div class="slider-label">
+          <span>Node repulsion</span>
+          <span id="rp-val">250</span>
+        </div>
+        <input type="range" id="repulsion" min="50" max="600" step="10" value="250">
+      </div>
+      <div class="slider-row">
+        <div class="slider-label">
+          <span>Link distance</span>
+          <span id="ld-val">110</span>
+        </div>
+        <input type="range" id="link-dist" min="40" max="300" step="5" value="110">
+      </div>
+    </div>
+
+  </aside><!-- /sidebar -->
+
+  <!-- ══════════════════════════════════════════════════════════
+       GRAPH CANVAS
+       ══════════════════════════════════════════════════════════ -->
+  <div class="graph-area">
+    <svg id="graph" aria-label="Museum network graph"></svg>
+
+    <div id="tooltip"></div>
+
+    <!-- Stats overlay -->
+    <div class="stats-bar">
+      <span id="stat-m">0</span>&nbsp;museums
+      <span id="stat-c">0</span>&nbsp;criteria
+      <span id="stat-l">0</span>&nbsp;connections
+    </div>
+
+    <!-- Zoom controls -->
+    <div class="zoom-controls">
+      <button class="zoom-btn" id="zoom-in"    title="Zoom in">+</button>
+      <button class="zoom-btn" id="zoom-out"   title="Zoom out">−</button>
+      <button class="zoom-btn" id="zoom-reset" title="Reset view" style="font-size:13px">⊙</button>
+    </div>
+
+    <!-- Keyboard hint -->
+    <div class="hint">
+      Drag nodes to reposition<br>
+      Click same node again to deselect
+    </div>
+  </div>
+
+</div><!-- /app -->
+
+
+<!-- ════════════════════════════════════════════════════════════
+     D3.js — the charting/network library
+     Loaded from a CDN so no install needed.
+     ════════════════════════════════════════════════════════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+
+<script>
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║                        YOUR DATABASE                        ║
+   ║  Edit this section freely. The visualisation reads from     ║
+   ║  MUSEUMS, CRITERIA, and LINKS — nothing else.               ║
+   ╚══════════════════════════════════════════════════════════════╝ */
+
+// ── MUSEUMS ────────────────────────────────────────────────────
+// Each museum needs a unique `id` (no spaces).
+// Add any extra fields you like — they appear in the info panel.
+// "city" determines the node colour (see CITY_COLORS below).
+
+const MUSEUMS = [
+  { id: "rijksmuseum",     label: "Rijksmuseum",              city: "Amsterdam",  note: "National art & history museum"    },
+  { id: "nemo",            label: "NEMO Science Museum",      city: "Amsterdam",  note: "Hands-on science for all ages"    },
+  { id: "naturalis",       label: "Naturalis",                city: "Leiden",     note: "Natural history & biodiversity"   },
+  { id: "tropenmuseum",    label: "Tropenmuseum",             city: "Amsterdam",  note: "World cultures & heritage"        },
+  { id: "scheepvaart",     label: "Scheepvaartmuseum",        city: "Amsterdam",  note: "Dutch maritime history"           },
+  { id: "gemeentemuseum",  label: "Gemeentemuseum Den Haag",  city: "Den Haag",   note: "Art & applied arts"               },
+  { id: "groninger",       label: "Groninger Museum",         city: "Groningen",  note: "Contemporary art & design"        },
+  { id: "micropia",        label: "Micropia",                 city: "Amsterdam",  note: "World of micro-organisms"         },
+  { id: "speelklok",       label: "Museum Speelklok",         city: "Utrecht",    note: "Automatic musical instruments"    },
+  { id: "openluchtmuseum", label: "Openluchtmuseum",          city: "Arnhem",     note: "Open-air Dutch heritage village"  },
+];
+
+// ── CRITERIA ───────────────────────────────────────────────────
+// These are the kid-activity dimensions you're comparing.
+// Add, rename, or remove as your research framework evolves.
+// `description` appears in tooltips and the info panel.
+
+const CRITERIA = [
+  { id: "workshops",       label: "Workshops",            description: "Hands-on creative sessions for kids"           },
+  { id: "interactive",     label: "Interactive exhibits", description: "Touch and play-based displays"                 },
+  { id: "audio_kids",      label: "Audio guides (kids)",  description: "Child-specific audio tour format"              },
+  { id: "kids_tours",      label: "Kids' guided tours",   description: "Tours specially designed for children"         },
+  { id: "play_areas",      label: "Play areas",           description: "Dedicated play spaces inside the museum"       },
+  { id: "family_tickets",  label: "Family tickets",       description: "Discounted pricing for families"               },
+  { id: "storytelling",    label: "Storytelling",         description: "Story-based live programming for children"     },
+  { id: "outdoor",         label: "Outdoor activities",   description: "Programmes that take place outside"            },
+  { id: "digital",         label: "Digital activities",   description: "Apps, tablets, AR/VR experiences"             },
+  { id: "junior_member",   label: "Junior membership",    description: "A dedicated kids' membership programme"        },
+];
+
+// ── CONNECTIONS (EDGES) ────────────────────────────────────────
+// A link means: this museum offers this criterion.
+// source = museum id, target = criterion id.
+// You can also add a `weight` field (1–5) if you want to encode
+// quality or depth — right now all edges are treated equally.
+
+const LINKS = [
+  // Rijksmuseum
+  { source: "rijksmuseum",     target: "workshops"      },
+  { source: "rijksmuseum",     target: "audio_kids"     },
+  { source: "rijksmuseum",     target: "kids_tours"     },
+  { source: "rijksmuseum",     target: "family_tickets" },
+  { source: "rijksmuseum",     target: "digital"        },
+
+  // NEMO Science Museum
+  { source: "nemo",            target: "interactive"    },
+  { source: "nemo",            target: "workshops"      },
+  { source: "nemo",            target: "play_areas"     },
+  { source: "nemo",            target: "family_tickets" },
+  { source: "nemo",            target: "digital"        },
+  { source: "nemo",            target: "outdoor"        },
+
+  // Naturalis
+  { source: "naturalis",       target: "interactive"    },
+  { source: "naturalis",       target: "kids_tours"     },
+  { source: "naturalis",       target: "storytelling"   },
+  { source: "naturalis",       target: "workshops"      },
+  { source: "naturalis",       target: "family_tickets" },
+
+  // Tropenmuseum
+  { source: "tropenmuseum",    target: "workshops"      },
+  { source: "tropenmuseum",    target: "kids_tours"     },
+  { source: "tropenmuseum",    target: "storytelling"   },
+  { source: "tropenmuseum",    target: "family_tickets" },
+
+  // Scheepvaartmuseum
+  { source: "scheepvaart",     target: "audio_kids"     },
+  { source: "scheepvaart",     target: "interactive"    },
+  { source: "scheepvaart",     target: "kids_tours"     },
+  { source: "scheepvaart",     target: "digital"        },
+  { source: "scheepvaart",     target: "family_tickets" },
+
+  // Gemeentemuseum Den Haag
+  { source: "gemeentemuseum",  target: "workshops"      },
+  { source: "gemeentemuseum",  target: "play_areas"     },
+  { source: "gemeentemuseum",  target: "kids_tours"     },
+
+  // Groninger Museum
+  { source: "groninger",       target: "workshops"      },
+  { source: "groninger",       target: "interactive"    },
+  { source: "groninger",       target: "digital"        },
+
+  // Micropia
+  { source: "micropia",        target: "interactive"    },
+  { source: "micropia",        target: "family_tickets" },
+  { source: "micropia",        target: "digital"        },
+
+  // Museum Speelklok
+  { source: "speelklok",       target: "kids_tours"     },
+  { source: "speelklok",       target: "workshops"      },
+  { source: "speelklok",       target: "family_tickets" },
+
+  // Openluchtmuseum
+  { source: "openluchtmuseum", target: "outdoor"        },
+  { source: "openluchtmuseum", target: "workshops"      },
+  { source: "openluchtmuseum", target: "play_areas"     },
+  { source: "openluchtmuseum", target: "storytelling"   },
+  { source: "openluchtmuseum", target: "family_tickets" },
+  { source: "openluchtmuseum", target: "junior_member"  },
+];
+
+// ── CITY COLOURS ───────────────────────────────────────────────
+// Museum nodes are coloured by city. Add a city here if you add
+// museums in a new city. Uses hex values (any valid CSS colour).
+
+const CITY_COLORS = {
+  "Amsterdam": "#2A6496",
+  "Leiden":    "#1A7A5E",
+  "Den Haag":  "#7B5EA7",
+  "Groningen": "#B05D2A",
+  "Utrecht":   "#A0522D",
+  "Arnhem":    "#4A7C6F",
+};
+const DEFAULT_CITY_COLOR = "#555"; // fallback for unlisted cities
+
+
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║              VISUALISATION CODE STARTS HERE                 ║
+   ║  You don't have to change anything below, but comments      ║
+   ║  explain every step so you can adapt it as needed.          ║
+   ╚══════════════════════════════════════════════════════════════╝ */
+
+// ── MERGE NODES ─────────────────────────────────────────────────
+// D3 needs a single flat array of nodes. We tag each with a `type`
+// so we can distinguish museums from criteria later.
+
+const nodes = [
+  ...MUSEUMS.map(m  => ({ ...m, type: "museum"   })),
+  ...CRITERIA.map(c => ({ ...c, type: "criteria" })),
+];
+
+// Make a COPY of LINKS for D3 — D3's simulation mutates source/target
+// from string IDs into node-object references, so we preserve the
+// originals in LINKS for lookup logic later.
+const links = LINKS.map(l => ({ ...l }));
+
+// ── DEGREE MAP ──────────────────────────────────────────────────
+// Count how many connections each node has (its "degree").
+// We'll use this to scale museum node sizes.
+
+const degree = {};
+LINKS.forEach(l => {
+  degree[l.source] = (degree[l.source] || 0) + 1;
+  degree[l.target] = (degree[l.target] || 0) + 1;
+});
+
+// ── UPDATE STATS BAR ────────────────────────────────────────────
+document.getElementById("stat-m").textContent = MUSEUMS.length;
+document.getElementById("stat-c").textContent = CRITERIA.length;
+document.getElementById("stat-l").textContent = LINKS.length;
+
+// ── CITY LEGEND ─────────────────────────────────────────────────
+// Dynamically built from CITY_COLORS so it always stays in sync.
+
+const cityLegend = document.getElementById("city-legend");
+Object.entries(CITY_COLORS).forEach(([city, color]) => {
+  const row = document.createElement("div");
+  row.className = "legend-item";
+  row.innerHTML = `
+    <div class="legend-circle" style="background:${color}"></div>
+    ${city}
+  `;
+  cityLegend.appendChild(row);
+});
+
+// ── CRITERION FILTER BUTTONS ─────────────────────────────────────
+// One button per criterion. Clicking one fades everything except
+// museums that share that criterion.
+
+let activeFilter = null;
+const filterContainer = document.getElementById("filter-buttons");
+
+CRITERIA.forEach(c => {
+  const btn = document.createElement("button");
+  btn.className = "filter-btn";
+  btn.textContent = c.label;
+  btn.dataset.id  = c.id;
+  btn.onclick = () => {
+    // Toggle: clicking the same filter again clears it
+    activeFilter = (activeFilter === c.id) ? null : c.id;
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    if (activeFilter) { btn.classList.add("active"); applyFilter(activeFilter); }
+    else resetHighlight();
+  };
+  filterContainer.appendChild(btn);
+});
+
+// "Clear" button at the bottom
+const clearBtn = document.createElement("button");
+clearBtn.className = "filter-btn clear";
+clearBtn.textContent = "✕  Clear filter";
+clearBtn.style.marginTop = "6px";
+clearBtn.onclick = () => {
+  activeFilter = null;
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+  resetHighlight();
+};
+filterContainer.appendChild(clearBtn);
+
+
+// ── SVG SETUP ────────────────────────────────────────────────────
+// The SVG fills the .graph-area div completely.
+// All graph elements go inside `container` (a <g> group) so
+// zoom transforms only affect graph content, not tooltips/controls.
+
+const svg = d3.select("#graph");
+const getW = () => svg.node().clientWidth;
+const getH = () => svg.node().clientHeight;
+
+const container = svg.append("g").attr("class", "zoom-container");
+
+// ── ZOOM & PAN ───────────────────────────────────────────────────
+// d3.zoom handles mouse wheel zoom and click-drag panning.
+// scaleExtent sets the min/max zoom level.
+
+const zoom = d3.zoom()
+  .scaleExtent([0.15, 6])
+  .on("zoom", event => container.attr("transform", event.transform));
+
+svg.call(zoom);
+
+// Wire zoom buttons
+document.getElementById("zoom-in").onclick    = () => svg.transition().duration(350).call(zoom.scaleBy, 1.45);
+document.getElementById("zoom-out").onclick   = () => svg.transition().duration(350).call(zoom.scaleBy, 0.68);
+document.getElementById("zoom-reset").onclick = () => svg.transition().duration(500)
+  .call(zoom.transform, d3.zoomIdentity.translate(getW() / 2, getH() / 2).scale(0.85));
+
+
+// ── FORCE SIMULATION ─────────────────────────────────────────────
+// This is the physics engine that positions nodes on each "tick".
+//
+// forceLink  — springs that pull connected nodes toward each other
+// forceManyBody — electrostatic charge (negative = repulsion)
+// forceCenter — gravity that pulls everything toward the centre
+// forceCollide — prevents nodes from physically overlapping
+
+const simulation = d3.forceSimulation(nodes)
+  .force("link",    d3.forceLink(links).id(d => d.id).distance(110).strength(0.3))
+  .force("charge",  d3.forceManyBody().strength(-250))
+  .force("center",  d3.forceCenter(0, 0))
+  .force("collide", d3.forceCollide().radius(d => d.type === "museum" ? 50 : 38));
+
+
+// ── DRAW LINKS (EDGES) ───────────────────────────────────────────
+// Lines drawn first so they sit behind the nodes visually.
+
+const linkSel = container.append("g").attr("class", "links-group")
+  .selectAll("line")
+  .data(links)
+  .join("line")
+  .attr("class", "link");
+
+
+// ── DRAW MUSEUM NODES ────────────────────────────────────────────
+// Circles whose radius scales with connection degree.
+// Colour comes from CITY_COLORS via the `city` field.
+
+const museumSel = container.append("g").attr("class", "museum-nodes-group")
+  .selectAll("g")
+  .data(nodes.filter(d => d.type === "museum"))
+  .join("g")
+  .attr("class", "node-museum")
+  .call(makeDraggable())           // drag handler (defined below)
+  .on("click",     (e, d) => selectNode(d))
+  .on("mouseover", (e, d) => showTip(e, `<strong>${d.label}</strong><br>📍 ${d.city}`))
+  .on("mousemove", moveTip)
+  .on("mouseout",  hideTip);
+
+// The circle — r = base + scaled by degree so well-connected museums look bigger
+museumSel.append("circle")
+  .attr("r", d => 14 + (degree[d.id] || 0) * 2)
+  .style("fill", d => CITY_COLORS[d.city] || DEFAULT_CITY_COLOR);
+
+// Label beneath each museum node
+museumSel.append("text")
+  .attr("class", "node-label")
+  .attr("text-anchor", "middle")
+  .attr("font-size", 11)
+  .attr("font-weight", 500)
+  .attr("dy", d => (15 + (degree[d.id] || 0) * 2) + 13)  // offset below circle
+  .text(d => d.label);
+
+
+// ── DRAW CRITERIA NODES ──────────────────────────────────────────
+// Rounded squares (rect) so they look visually distinct from museums.
+
+const SIZE = 20; // square half-size → full rect is SIZE*2 × SIZE*2... actually let's use SIZE as full side
+const HALF = SIZE / 2;
+
+const criteriaSel = container.append("g").attr("class", "criteria-nodes-group")
+  .selectAll("g")
+  .data(nodes.filter(d => d.type === "criteria"))
+  .join("g")
+  .attr("class", "node-criteria")
+  .call(makeDraggable())
+  .on("click",     (e, d) => selectNode(d))
+  .on("mouseover", (e, d) => showTip(e, `<strong>${d.label}</strong><br><em style="color:#ddd">${d.description}</em>`))
+  .on("mousemove", moveTip)
+  .on("mouseout",  hideTip);
+
+criteriaSel.append("rect")
+  .attr("x", -HALF).attr("y", -HALF)
+  .attr("width", SIZE).attr("height", SIZE)
+  .attr("rx", 4);
+
+criteriaSel.append("text")
+  .attr("class", "node-label")
+  .attr("text-anchor", "middle")
+  .attr("font-size", 10)
+  .attr("dy", HALF + 12)
+  .text(d => d.label);
+
+
+// ── SIMULATION TICK ──────────────────────────────────────────────
+// Called ~60× per second while the simulation is "hot".
+// We just read .x/.y off each node object and update the DOM.
+
+simulation.on("tick", () => {
+  linkSel
+    .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+
+  museumSel.attr("transform",   d => `translate(${d.x},${d.y})`);
+  criteriaSel.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+// Center the view when the simulation finishes its initial layout
+simulation.on("end", () => {
+  svg.call(zoom.transform, d3.zoomIdentity
+    .translate(getW() / 2, getH() / 2).scale(0.85));
+});
+
+// Also set an initial transform immediately (before simulation ends)
+// so the graph appears centred on page load
+svg.call(zoom.transform, d3.zoomIdentity
+  .translate(getW() / 2, getH() / 2).scale(0.85));
+
+
+// ── PHYSICS SLIDERS ──────────────────────────────────────────────
+// Each slider updates a simulation force in real-time and
+// "reheats" the simulation (alpha > 0) so it rearranges nodes.
+
+document.getElementById("link-strength").oninput = function () {
+  document.getElementById("ls-val").textContent = (+this.value).toFixed(2);
+  simulation.force("link").strength(+this.value);
+  simulation.alpha(0.3).restart();
+};
+document.getElementById("repulsion").oninput = function () {
+  document.getElementById("rp-val").textContent = this.value;
+  simulation.force("charge").strength(-this.value);  // negative = repulsion
+  simulation.alpha(0.3).restart();
+};
+document.getElementById("link-dist").oninput = function () {
+  document.getElementById("ld-val").textContent = this.value;
+  simulation.force("link").distance(+this.value);
+  simulation.alpha(0.3).restart();
+};
+
+
+// ── NODE SELECTION ───────────────────────────────────────────────
+// Clicking a node: highlights its direct neighbours, fades the rest,
+// and fills the info panel in the sidebar.
+
+let selectedId = null;
+
+function selectNode(d) {
+  // Clicking the same node twice deselects it
+  if (selectedId === d.id) {
+    selectedId = null;
+    resetHighlight();
+    document.getElementById("info-panel").innerHTML =
+      `<p style="color:#bbb;font-style:italic;font-size:12px">Click any node to see its details and connections</p>`;
+    return;
+  }
+  selectedId = d.id;
+
+  // Collect IDs of this node + its direct neighbours
+  const connectedSet = new Set([d.id]);
+  links.forEach(l => {
+    if (l.source.id === d.id) connectedSet.add(l.target.id);
+    if (l.target.id === d.id) connectedSet.add(l.source.id);
+  });
+
+  // Apply fade/highlight classes
+  museumSel.classed(  "faded", n => !connectedSet.has(n.id));
+  criteriaSel.classed("faded", n => !connectedSet.has(n.id));
+  linkSel
+    .classed("highlighted", l => l.source.id === d.id || l.target.id === d.id)
+    .classed("faded",       l => l.source.id !== d.id && l.target.id !== d.id);
+
+  // Fill sidebar info panel
+  renderInfoPanel(d);
+}
+
+function resetHighlight() {
+  museumSel.classed("faded", false);
+  criteriaSel.classed("faded", false);
+  linkSel.classed("highlighted", false).classed("faded", false);
+}
+
+// ── INFO PANEL CONTENT ───────────────────────────────────────────
+// Shows different content depending on whether you clicked
+// a museum node or a criteria node.
+
+function renderInfoPanel(d) {
+  // Get connected items using the original LINKS (still has string IDs)
+  let connections, tagsHtml;
+
+  if (d.type === "museum") {
+    // Which criteria does this museum offer?
+    connections = LINKS
+      .filter(l => l.source === d.id || l.target === d.id)
+      .map(l => (l.source === d.id ? l.target : l.source))
+      .map(id => CRITERIA.find(c => c.id === id))
+      .filter(Boolean);
+    tagsHtml = connections
+      .map(c => `<span class="info-tag criteria-tag" title="${c.description}">${c.label}</span>`)
+      .join("");
+  } else {
+    // Which museums offer this criterion?
+    connections = LINKS
+      .filter(l => l.source === d.id || l.target === d.id)
+      .map(l => (l.source === d.id ? l.target : l.source))
+      .map(id => MUSEUMS.find(m => m.id === id))
+      .filter(Boolean);
+    tagsHtml = connections
+      .map(m => `<span class="info-tag" style="background:#e6f0f6;color:#154e70">${m.label}</span>`)
+      .join("");
+  }
+
+  const cityColour = d.city ? (CITY_COLORS[d.city] || DEFAULT_CITY_COLOR) : null;
+  const cityDot    = cityColour
+    ? `<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${cityColour};margin-right:4px;vertical-align:middle"></span>`
+    : "";
+
+  document.getElementById("info-panel").innerHTML = `
+    <h3>${d.label}</h3>
+    <p class="sub">
+      ${d.city ? `${cityDot}${d.city} — ` : ""}${d.note || d.description || ""}
+    </p>
+    <p style="font-size:11px;color:#999;margin-bottom:6px">
+      ${d.type === "museum" ? `Activities offered (${connections.length}):` : `Museums offering this (${connections.length}):`}
+    </p>
+    ${tagsHtml || '<span style="color:#bbb;font-size:11px">None recorded yet</span>'}
+  `;
+}
+
+
+// ── FILTER FUNCTION ──────────────────────────────────────────────
+// Clicking a criterion filter highlights only museums linked to it.
+
+function applyFilter(criterionId) {
+  if (!criterionId) { resetHighlight(); return; }
+
+  // Which museums are connected to this criterion?
+  const connected = new Set([criterionId]);
+  LINKS
+    .filter(l => l.source === criterionId || l.target === criterionId)
+    .forEach(l => connected.add(l.source === criterionId ? l.target : l.source));
+
+  museumSel.classed(  "faded", n => !connected.has(n.id));
+  criteriaSel.classed("faded", n => !connected.has(n.id));
+  linkSel
+    .classed("highlighted", l => l.source.id === criterionId || l.target.id === criterionId)
+    .classed("faded",       l => l.source.id !== criterionId && l.target.id !== criterionId);
+}
+
+
+// ── TOOLTIP ──────────────────────────────────────────────────────
+// A small floating label that follows the mouse on hover.
+
+const tooltip = document.getElementById("tooltip");
+
+function showTip(event, html) {
+  tooltip.innerHTML = html;
+  tooltip.style.opacity = 1;
+  moveTip(event);
+}
+function moveTip(event) {
+  const rect = svg.node().getBoundingClientRect();
+  tooltip.style.left = (event.clientX - rect.left + 14) + "px";
+  tooltip.style.top  = (event.clientY - rect.top  - 40) + "px";
+}
+function hideTip() { tooltip.style.opacity = 0; }
+
+
+// ── DRAG HANDLERS ────────────────────────────────────────────────
+// Allows users to manually reposition nodes by clicking and dragging.
+// Setting fx/fy "pins" a node; setting them to null lets it float again.
+
+function makeDraggable() {
+  return d3.drag()
+    .on("start", (event, d) => {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x; d.fy = d.y;
+    })
+    .on("drag", (event, d) => {
+      d.fx = event.x; d.fy = event.y;
+    })
+    .on("end", (event, d) => {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null; d.fy = null; // release so the simulation can move it again
+    });
+}
+
+</script>
+</body>
+</html>
