@@ -1,3 +1,8 @@
+# The key .py file to run for crawling museum websites and extracting youth/family activity info.
+# It uses the cached list of Dutch museums from Wikidata (created by fetch script) 
+# and applies heuristics to find relevant pages and extract info (see nl_museums_wikidata.csv).
+
+
 import requests
 import random
 import time
@@ -13,7 +18,7 @@ import scrapy
 # ------------- CONFIGURATION -------------
 
 N_SAMPLED_MUSEUMS = 50
-TARGET_SUCCESSFUL_MUSEUMS = 100   # change to 80 later
+TARGET_SUCCESSFUL_MUSEUMS = 100 
 RANDOM_SEED = 7
 REQUEST_TIMEOUT = 10
 SLEEP_BETWEEN_REQUESTS = (1, 3)  # seconds, random between min/max
@@ -630,4 +635,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
