@@ -2,7 +2,6 @@
 # It uses the cached list of Dutch museums from Wikidata (created by fetch script) 
 # and applies heuristics to find relevant pages and extract info (see nl_museums_wikidata.csv).
 
-
 import requests
 import random
 import time
@@ -18,8 +17,8 @@ import scrapy
 # ------------- CONFIGURATION -------------
 
 N_SAMPLED_MUSEUMS = 50
-TARGET_SUCCESSFUL_MUSEUMS = 100 
-RANDOM_SEED = 7
+TARGET_SUCCESSFUL_MUSEUMS = 100   
+RANDOM_SEED = 42
 REQUEST_TIMEOUT = 10
 SLEEP_BETWEEN_REQUESTS = (1, 3)  # seconds, random between min/max
 MAX_PAGES_PER_MUSEUM = 25        # to avoid overloading sites
@@ -37,6 +36,18 @@ YOUTH_KEYWORDS = [
     "onderwijs", "scholen", "educatie", "familie", "gezinnen", "kinderen",
     "jeugd", "jongeren", "basisschool", "voortgezet onderwijs", "schoolbezoek"
 ]
+
+# Keywords for inferring museum category from name (very rough)
+MUSEUM_CATEGORY_LABELS = {
+    "art": "Art museum",
+    "history": "History museum",
+    "science": "Science & technology museum",
+    "natural_history": "Natural history museum",
+    "open_air": "Open-air / outdoor museum",
+    "transport_industrial": "Transport & industrial museum",
+    "other": "Other / specialized museum",
+    "unknown": "Unknown",
+}
 
 # Keywords for language detection
 LANG_KEYWORDS = {
@@ -147,12 +158,25 @@ ACCESSIBILITY_PATTERNS = [
 # ------------- STEP 1: GET MUSEUM LIST FROM WIKIDATA -------------
 
 def get_nl_museums_cached() -> pd.DataFrame:
-    path = "nl_museums_wikidata.csv"
+    path = "nl_museums_wikidata.csv"  
     if not os.path.exists(path):
         raise FileNotFoundError(
-            f"{path} not found. Run the fetch script once to create it."
+            f"{path} not found. Put the cleaned Wikidata CSV here."
         )
-    return pd.read_csv(path)
+    df = pd.read_csv(path)
+
+    # If you still want museum_category as a generic field, keep this:
+    if "museum_category" in df.columns:
+        df["museum_category"] = (
+            df["museum_category"]
+            .astype(str)
+            .str.strip()
+            .str.lower()
+        )
+    else:
+        df["museum_category"] = "unknown"
+
+    return df
 
 # ------------- STEP 2: SAMPLE MUSEUMS -------------
 
@@ -246,27 +270,6 @@ def extract_text(html):
 
 # ------------- STEP 4: HEURISTICS FOR FIELDS -------------
 
-#def infer_category(museum_name):
-    """
-    Very rough heuristic: classify museum as history, art, or science.
-    If nothing matches, return 'unknown'.
-    """
-    if not museum_name:
-        return "unknown"
-    name = museum_name.lower()
-
-    art_keywords = ["art", "kunst", "beeldende", "modern", "contemporary"]
-    history_keywords = ["history", "histor", "war", "oorlog", "heritage", "erfgoed"]
-    science_keywords = ["science", "natuur", "technology", "techniek", "laboratory", "wetenschap"]
-
-    if any(k in name for k in art_keywords):
-        return "art"
-    if any(k in name for k in history_keywords):
-        return "history"
-    if any(k in name for k in science_keywords):
-        return "science"
-
-    return "history"
 
 def detect_languages(text, html):
     """
@@ -460,7 +463,7 @@ def crawl_museum(museum_row, activity_id_start=0):
     base_url = museum_row["website"]
     museum_name = museum_row["museum_name"]
     city = museum_row["city"]
-    #category = infer_category(museum_name)
+    museum_type_en = museum_row.get("museum_type_en", "")
 
     print(f"Crawling museum: {museum_name} ({base_url})")
     results = []
@@ -471,7 +474,7 @@ def crawl_museum(museum_row, activity_id_start=0):
         print(f"  Could not fetch homepage: {base_url}")
         return results
 
-    # NEW: detect museum-level accessibility once
+    # detect museum-level accessibility once
     museum_has_access, museum_access_desc = detect_museum_accessibility(base_url, html_home)
 
     visited.add(base_url)
@@ -521,7 +524,7 @@ def crawl_museum(museum_row, activity_id_start=0):
             row = {
                 "activity_id": activity_id_start + len(results) + 1,
                 "museum_name": museum_name,
-                #"museum_category": category,
+                "museum_category": museum_type_en,
                 "city": city,
                 "activity_url": url,
                 "activity_title": activity_title,
@@ -570,7 +573,7 @@ def main():
     target = min(TARGET_SUCCESSFUL_MUSEUMS, len(museums_df))
     print("Target successful museums:", target)
 
-    museums_shuffled = museums_df.sample(frac=1.0, random_state=7).reset_index(drop=True)
+    museums_shuffled = museums_df.sample(frac=1.0, random_state=42).reset_index(drop=True)
 
     all_records = []
     successful_museums = 0
@@ -593,6 +596,8 @@ def main():
             "museum_name": row.museum_name,
             "city": row.city,
             "website": row.website,
+            #"museum_type_label": getattr(row, "museum_type_label", ""),
+            "museum_type_en": getattr(row, "museum_type_en", ""),
         }
 
         # IMPORTANT: pass the current counter as start value
@@ -619,12 +624,6 @@ def main():
     print(f"\nTried museums: {tried_museums}")
     print(f"Successful museums: {successful_museums}")
 
-    if successful_museums < target:
-        print(
-            f"WARNING: only {successful_museums} museums succeeded "
-            f"out of requested {target} (pool exhausted)."
-        )
-
     if all_records:
         df_activities = pd.DataFrame(all_records)
         out_path = next_output_filename()
@@ -635,3 +634,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
