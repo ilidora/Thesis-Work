@@ -1,0 +1,793 @@
+museum_uri,museum_name,city,website,museum_type_label,museum_type_en
+http://www.wikidata.org/entity/Q1013565,Kasteel Radboud,Medemblik,http://www.kasteelradboud.nl,kasteel,castle
+http://www.wikidata.org/entity/Q101560973,Leiderdorps Museum, Leiderdorp,https://www.leiderdorpsmuseum.nl/,,
+http://www.wikidata.org/entity/Q103849450,Museum De kantfabriek,Horst aan de Maas,http://www.museumdekantfabriek.nl/,,
+http://www.wikidata.org/entity/Q104441744,Van Doesburg-Rinsemahuis,Smallingerland,https://www.museumdrachten.nl/museumwoning-vdrh/,woonhuis,house
+http://www.wikidata.org/entity/Q104524855,Royal Delft Museum,Delft,https://museum.royaldelft.com/,,
+http://www.wikidata.org/entity/Q1051928,Kroller Muller Museum,Otterlo,http://krollermuller.nl,beeldenpark; cultureel instituut; kunstmuseumgebouw; nationaal museum,sculpture park; cultural institute; art museum building; national museum
+http://www.wikidata.org/entity/Q1056152,Paleis op de Dam,Amsterdam,https://www.paleisamsterdam.nl/; https://www.paleisamsterdam.nl/en/,gemeentehuis; koninklijk paleis,Town Hall; Royal Palace
+http://www.wikidata.org/entity/Q106464757,HomeComputerMuseum,Helmond,https://www.homecomputermuseum.nl/en%20HomeComputerMuseum,computermuseum,computer museum
+http://www.wikidata.org/entity/Q106546760,Bonami Games & Computers Museum,Epe,https://computermuseum.nl/,,
+http://www.wikidata.org/entity/Q106554988,Museum Rotterdam,Rotterdam,https://museumrotterdam.nl/,,
+http://www.wikidata.org/entity/Q106603214,FENIX Landverhuizersmuseum,Rotterdam,https://www.fenix.nl/,migratiemuseum,Migration Museum
+http://www.wikidata.org/entity/Q106977687,Keramisch Museum Goedewaagen,Goedewaagen,https://www.keramischmuseumgoedewaagen.nl/,keramiekmuseum,ceramics museum
+http://www.wikidata.org/entity/Q107060192,Club Solo,Breda,https://clubsolo.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q107097389,Museum Voorschoten,Voorschoten,https://website.museumvoorschoten.nl/,,
+http://www.wikidata.org/entity/Q107335019,Museum of Comic Art,Noordwijk,https://www.museumofcomicart.nl/,,
+http://www.wikidata.org/entity/Q107656756,Museum EICAS,Deventer,https://www.eicas.nl/,,
+http://www.wikidata.org/entity/Q108290266,Beeldenbos Noord,Amsterdam,http://www.beeldenbosnoord.nl,beeldenpark,image park
+http://www.wikidata.org/entity/Q10896041,Van Goghhuis,Zundert,http://www.vangoghhuis.com,,
+http://www.wikidata.org/entity/Q109205757,Nederlands Zuivelmuseum,Heerde,https://www.zuivelmuseum.nl,,
+http://www.wikidata.org/entity/Q109382770,Cultuur Historisch Museum Oene,Epe,https://museumoene.nl,,
+http://www.wikidata.org/entity/Q109771319,Herman Brood Museum & Experience,Zwolle,https://hermanbroodmuseum.nl/,,
+http://www.wikidata.org/entity/Q110053532,Museum van de Vrouw,Echt,https://www.museumvandevrouw.nl/,,women museum
+http://www.wikidata.org/entity/Q110062508,Mobach Keramiek Museum,Utrecht,https://www.mobach-keramiek.nl/nl/museum/,keramiekmuseum,ceramics museum
+http://www.wikidata.org/entity/Q110281534,Museum Huis Doorn,Doorn,https://www.huisdoorn.nl/,museumhuis; nationaal museum,Museum House; National Museum
+http://www.wikidata.org/entity/Q110282067,Museumhaven Zeeland,Schouwen-Duiveland,https://www.museumhavenzeeland.nl/,museumhaven,museum port
+http://www.wikidata.org/entity/Q110322021,Straat Museum,Amsterdam,http://www.straatmuseum.com/,,
+http://www.wikidata.org/entity/Q110412177,Kasteel-Museum Sypesteyn,Loosdrecht,http://www.sypesteyn.nl,,
+http://www.wikidata.org/entity/Q110414392,Museum Landgoed Fraeylemaborg,Slochteren,http://www.fraeylemaborg.nl,,
+http://www.wikidata.org/entity/Q110473013,Nederlands Jachtmuseum,Renkum,https://nederlandsjachtmuseum.nl/,,
+http://www.wikidata.org/entity/Q110538315,Computer Museum Arnhem,Arnhem,https://computermuseumarnhem.nl/,computermuseum,computer museum
+http://www.wikidata.org/entity/Q110541187,kunstmuseum Oude Kerk,Amsterdam,https://oudekerk.nl,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q110891770,Historisch Museum Ommen,Ommen,https://museum-ommen.nl/; https://www.cco-ommen.nl/museum/,historisch museum,historical museum
+http://www.wikidata.org/entity/Q110906682,Museum 't Oude Slot,Veldhoven,http://www.museumoudeslot.nl,,folklore art;culture; heritage
+http://www.wikidata.org/entity/Q110906694,Markiezenhof,Bergen op Zoom,https://www.markiezenhof.nl/,,art museum
+http://www.wikidata.org/entity/Q110907339,Leerlooierij Museum Ravenstein,Ravenstein,http://www.leerlooierijravenstein.nl/,,historical museum
+http://www.wikidata.org/entity/Q110907350,Oudheidkundig Streekmuseum Alphen,Alphen,http://www.streekmuseumalphen.nl,,historical museum
+http://www.wikidata.org/entity/Q110907355,Nationaal Varkensmuseum 't Rundal,Sint-Oedenrode,http://www.varkensmuseum.nl,,agricultural museum
+http://www.wikidata.org/entity/Q110907358,De Holle Roffel ambachts- en gereedschapsmuseum,Kruisland,https://deholleroffel.nl/,,tool museum
+http://www.wikidata.org/entity/Q110907359,Kempisch Bakkerijmuseum 'De Grenswachter',Luyksgestel,http://www.bakkerij-museum.nl,,bakery museum
+http://www.wikidata.org/entity/Q110907363,Museum Techniek met 'n Ziel,Neerkant,http://www.techniekmeteenziel.nl/,,technology museum
+http://www.wikidata.org/entity/Q110907364,Museum voor Vluchtsimulatie,Someren,http://www.vluchtsimulatie.nl,,technology museum
+http://www.wikidata.org/entity/Q110907366,Plattelandsmuseum Duinhove,Duinhove,http://www.duinhove.nl/,,heritage museum
+http://www.wikidata.org/entity/Q110907367,Acht van Chaam Museum,Chaam,https://www.8vanchaam.nl/de-acht/museum/,,historical museum
+http://www.wikidata.org/entity/Q110907382,Museum Kruysenhuis,Den Heuvel,http://www.kruysenhuis.nl,,art museum
+http://www.wikidata.org/entity/Q110907385,Museum 'De Canonye',Boxtel,http://www.museumcanonije.nl/,,heritage museum
+http://www.wikidata.org/entity/Q110907386,Museum Romeins Halder,Sint-Michielsgestel,http://www.romeinshalder.nl,,historical museum
+http://www.wikidata.org/entity/Q110907392,Jan Visser Museum,Helmond,http://www.janvisser-museum.nl,,
+http://www.wikidata.org/entity/Q110907393,Watersnoodwoning Museum Heijningen,Moerdijk,http://www.watersnoodwoning-moerdijk.nl,,historical museum
+http://www.wikidata.org/entity/Q110907395,Archeologisch & Paleontologisch Museum Hertogsgemaal,,http://www.museumhertogsgemaal.nl,,
+http://www.wikidata.org/entity/Q110907398,Breda's Begijnhofmuseum,Breda,http://www.begijnhofbreda.nl/,,historical museum;religion and culture
+http://www.wikidata.org/entity/Q110907402,Museum de Bevrijdende Vleugels,Best,http://www.bevrijdendevleugels.com,,historical museum;technology;wartime
+http://www.wikidata.org/entity/Q110907405,Visserij- en Cultuurhistorisch Museum,Woudrichem,http://www.visserijmuseumwoudrichem.nl,,fishing museum
+http://www.wikidata.org/entity/Q110907407,Edah Museum,Helmond,http://www.edahmuseum.nl,,herotage museum; supermarket
+http://www.wikidata.org/entity/Q110907414,Nationaal Veeteelt Museum,Leeuwarden,http://www.nationaalveeteeltmuseum.nl,,agricultural museum
+http://www.wikidata.org/entity/Q110907415,Vliegend Museum Seppe,Halderberge,https://vliegendmuseumseppe.nl/,,
+http://www.wikidata.org/entity/Q110978413,Museum Klooster Ter Apel,Ter Apel,http://www.kloosterterapel.nl,,religious museum
+http://www.wikidata.org/entity/Q110985372,Batavialand,Lelystad,https://www.batavialand.nl/,culturele organisatie; netwerkorganisatie,Maritime Museum
+http://www.wikidata.org/entity/Q110986303,Havezate Mensinge,Roden,https://mensinge.nl/,,heritage museum
+http://www.wikidata.org/entity/Q110986313,Menkemaborg,Uithuizen,http://www.menkemaborg.nl,,castle
+http://www.wikidata.org/entity/Q110990599,Stadsmuseum Woerden,Woerden,http://www.stadsmuseumwoerden.nl,,city museum
+http://www.wikidata.org/entity/Q110990892,Museum het Oude Raadhuis Urk,Urk,http://www.museumopurk.nl,,art museum
+http://www.wikidata.org/entity/Q110995895,Cultuurhistorisch Centrum Ommen,Ommen,https://www.museum-ommen.nl/,,historical museum
+http://www.wikidata.org/entity/Q110995898,Geert Groote Huis,Deventer,https://www.geertgrootehuis.nl/,,
+http://www.wikidata.org/entity/Q110995903,Het Gildenhuys,Blokzijl,https://www.gildenhuysblokzijl.nl/,,heritage museum; maritime
+http://www.wikidata.org/entity/Q110995906,Huygensmuseum Hofwijck,Voorburg,https://huygensmuseum.nl/,,art museum
+http://www.wikidata.org/entity/Q110995912,Museum de Heksenwaag,Heksenwaag,https://www.heksenwaag.nl/,,historical museum; witch prosecution
+http://www.wikidata.org/entity/Q110995913,Museum De Voorde,Zoetermeer,https://museumdevoorde.nl,,
+http://www.wikidata.org/entity/Q110995916,Museum Vreeburg,Schagen,https://www.museumvreeburg.nl/,,agricultural museum; regional museum
+http://www.wikidata.org/entity/Q110995917,Museummolen Jan Pol,Dalen,https://www.aolddaoln.nl/,molenmuseum,mill museum
+http://www.wikidata.org/entity/Q110995918,Nationaal Busmuseum,Hoogezand,https://www.nationaalbusmuseum.nl/,,transport museum; bus museum
+http://www.wikidata.org/entity/Q110995922,Openluchtmuseum De Duinhuisjes,Rockanje,https://www.hvwv.nl/,openluchtmuseum,open-air museum
+http://www.wikidata.org/entity/Q110995931,Museum De Proefkolonie,Frederiksoord,https://proefkolonie.nl/,,historical museum; colonial museum
+http://www.wikidata.org/entity/Q110995934,Levend Paardenmuseum,Amsterdam,https://levendpaardenmuseum.nl/,,living hourse museum; cultural museum
+http://www.wikidata.org/entity/Q110995941,Stadsmuseum Hellevoetsluis,Hellevoetsluis,https://www.stadsmuseum-hellevoetsluis.nl/,,open-air museum
+http://www.wikidata.org/entity/Q110995944,Vereniging Het Spinozahuis,Rijnsburg,https://www.spinozahuis.nl/,,house
+http://www.wikidata.org/entity/Q110996021,Buurderij De Lage Hof,Overasselt,https://buurderijdelagehof.nl/,,agricultural museum
+http://www.wikidata.org/entity/Q110996022,Discovery Museum,Kerkrade,https://www.discoverymuseum.nl/,,
+http://www.wikidata.org/entity/Q111036461,Vestingmuseum Maastricht,Maastricht,https://vestingmuseummaastricht.nl/,,
+http://www.wikidata.org/entity/Q111081381,Oce Museum,Venlo,https://www.ocemuseum.nl/,,
+http://www.wikidata.org/entity/Q111081384,Museum Asselt,Asselt,https://www.museumasselt.nl/,,city museum
+http://www.wikidata.org/entity/Q111154596,Theo Thijssen Museum,Amsterdam,https://www.theothijssenmuseum.nl/,,
+http://www.wikidata.org/entity/Q111908847,Marres,Maastricht,https://marres.org/,,
+http://www.wikidata.org/entity/Q111976816,Museum De Torenkamer,Hilvarenbeek,https://beeksetoren.nl/nl,,
+http://www.wikidata.org/entity/Q111991798,Airborne at the Bridge,Arnhem,https://www.airbornemuseum.nl/airborne-at-the-bridge,dependance,Regional Museum; wartime
+http://www.wikidata.org/entity/Q111991800,Museum Peel en Maas,Heroes,https://museumpeelenmaas.nl/cms/,,Regional Museum
+http://www.wikidata.org/entity/Q111991807,Garage Rotterdam,Rotterdam,https://garagerotterdam.nl/; https://www.garagerotterdam.nl/,,
+http://www.wikidata.org/entity/Q111994789,Museum Gevangenpoort,Den Haag,http://www.gevangenpoort.nl/page/english/,,
+http://www.wikidata.org/entity/Q1121835,Ir.D.F. Woudagemaal,De Friese Meren,https://www.woudagemaal.nl/,stoomgemaal,Smoothed
+http://www.wikidata.org/entity/Q1127079,Museum Het Valkhof,Nijmegen,http://www.museumhetvalkhof.nl,,
+http://www.wikidata.org/entity/Q113006081,Rijksmuseum Muiderslot,Muiden,http://www.muiderslot.nl/,,castle
+http://www.wikidata.org/entity/Q1131589,Wereldmuseum Amsterdam,Amsterdam,https://amsterdam.wereldmuseum.nl/; https://amsterdam.wereldmuseum.nl/en,,
+http://www.wikidata.org/entity/Q1131877,Nederlands Instituut voor Beeld en Geluid,Hilversum,https://www.beeldengeluid.nl/,audiovisueel archief; filmorganisatie; mediamuseum; openaccessuitgever,audiovisual archive; film organisation; media museum; open access publisher
+http://www.wikidata.org/entity/Q113659117,OSCAM,Amsterdam,https://www.oscam.nl/,,
+http://www.wikidata.org/entity/Q113759644,Museum Het Schip,Amsterdam,http://www.hetschip.nl/en/,,
+http://www.wikidata.org/entity/Q113850594,Greenbox Museum,Hoofdorp,https://greenboxmuseum.com/,,art museum
+http://www.wikidata.org/entity/Q113947640,The Upside Down Amsterdam,Amsterdam,https://www.the-upsidedown.com/,,
+http://www.wikidata.org/entity/Q114867292,Museum Borg Verhildersum,Groningen,https://www.verhildersum.nl/,,castle
+http://www.wikidata.org/entity/Q115131080,Maczek Memorial Breda,Breda,https://www.maczekmemorialbreda.nl/,militair museum,Military Museum
+http://www.wikidata.org/entity/Q115786157,Nationaal Videogame Museum,Zoetermeer,https://www.nationaalvideogamemuseum.nl/,computermuseum,computer museum
+http://www.wikidata.org/entity/Q11715588,Museum Martena,Waadhoeke,http://www.museummartena.nl/,,
+http://www.wikidata.org/entity/Q11722011,Haags Historisch Museum/Rijksmuseum De Gevangenpoort,Den Haag,https://www.haagshistorischmuseum.nl/,,
+http://www.wikidata.org/entity/Q1179733,De Appel,Amsterdam,http://www.deappel.nl,kunstencentrum,arts centre
+http://www.wikidata.org/entity/Q12012586,De Spitkeet,Harkema,https://www.despitkeet.nl/,,
+http://www.wikidata.org/entity/Q12013196,Museum Belvédère,Heerenveen,https://www.museumbelvedere.nl/,,
+http://www.wikidata.org/entity/Q12013217,Noordbrabants Museum,'s-Hertogenbosch,http://www.hetnoordbrabantsmuseum.nl/,,
+http://www.wikidata.org/entity/Q12038997,Comenius Museum,Naarden,http://www.comeniusmuseum.nl/,mausoleum,mausoleum
+http://www.wikidata.org/entity/Q120728916,Streekmuseum De Kalkovens,Hardenberg,https://www.kalkovensdedemsvaart.nl,gebouwencomplex; openluchtmuseum; streekmuseum,building complex; open-air museum; regional museum
+http://www.wikidata.org/entity/Q1208561,Diamantmuseum,Amsterdam,http://www.diamantmuseumamsterdam.nl,,
+http://www.wikidata.org/entity/Q121900753,Museum aan de A,Groningen,https://museumaandea.nl/,,
+http://www.wikidata.org/entity/Q123438598,Kunst-Torentje,Almelo,https://www.kunsttorentje.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q123458699,Viking Informatiecentrum,Hollands Kroon,https://www.vikingen.nl/pg-28219-7-84399/pagina/welkom.html,,
+http://www.wikidata.org/entity/Q124003687,Cultuurhuis Bergeijk,Bergeijk,https://cultuurhuisbergeijk.nl/,,regional museum
+http://www.wikidata.org/entity/Q124080461,C1000 museum,Hellendoorn,https://www.c1000museum.nl/,,
+http://www.wikidata.org/entity/Q1244372,Allard Pierson Museum,Amsterdam,http://www.allardpiersonmuseum.nl/,archeologiemuseum; universiteitsmuseum,Archaeology Museum; University Museum
+http://www.wikidata.org/entity/Q124477604,Memorial 40-45 Kapelle,Kapelle,https://www.memorial4045kapelle.nl/,,
+http://www.wikidata.org/entity/Q124478103,Spelebos,Best,https://www.spelebos.nl/,speelgoedmuseum,toy museum
+http://www.wikidata.org/entity/Q125398667,Museum Nieuwpoort,Nieuwpoort,https://museumnieuwpoort.nl/,,
+http://www.wikidata.org/entity/Q125399143,Nationaal Museum Tachtigjarige Oorlog,Oost Gelre,https://nmto.nl/,,
+http://www.wikidata.org/entity/Q125421055,ANNO,Zwolle,https://anno.nl/,,
+http://www.wikidata.org/entity/Q125566850,Museum Scheldewerf,Vlissingen,https://www.museumscheldewerf.nl/,,
+http://www.wikidata.org/entity/Q1258370,Drents Museum,Assen,http://drentsmuseum.nl,,
+http://www.wikidata.org/entity/Q127610824,Museum 't Kromhout,Amsterdam,https://www.kromhoutmuseum.nl/,,technological museum
+http://www.wikidata.org/entity/Q1278103,Eindhoven Museum,Eindhoven,https://eindhovenmuseum.nl/,,
+http://www.wikidata.org/entity/Q1282056,Ecomare,Texel,http://www.ecomare.nl/,informatiecentrum voor toeristen; natuurmuseum; publiek aquarium; vogelreservaat; zeehondenopvang,tourist information centre; nature museum; public aquarium; bird reserve; seal shelter
+http://www.wikidata.org/entity/Q130525732,Huys Egmont,Egmond aan den Hoef,https://www.huysegmont.nl/,bezoekerscentrum,Visitor Centre
+http://www.wikidata.org/entity/Q131138756,Museum Waalsdorp,Wassenaar,https://www.museumwaalsdorp.nl,,
+http://www.wikidata.org/entity/Q13134395,Museum 't Rieuw,Marum,http://www.museagemeentemarum.nl/welkom-in-t-rieuw/,landbouwmuseum; streekmuseum,agricultural museum; regional museum
+http://www.wikidata.org/entity/Q13134511,Museum Aldeboarn,Heerenveen,https://museumaldeboarn.nl/,,
+http://www.wikidata.org/entity/Q13135554,Ferdinand Domela Nieuwenhuis Museum,Heerenveen,https://ferdinanddomelanieuwenhuis.nl/,,
+http://www.wikidata.org/entity/Q13135607,Vlasbewerkingsmuseum It Braakhok,Noardeast-Fryslân,https://www.itbraakhok.nl/,,
+http://www.wikidata.org/entity/Q13135821,Geologisch Museum Hofland,Laren,http://www.geologischmuseumhofland.nl,,
+http://www.wikidata.org/entity/Q13136222,IJstijdenmuseum,Achtkarspelen,https://www.ijstijdenmuseum.nl/,,
+http://www.wikidata.org/entity/Q13137164,Museum Dekemastate,Leeuwarden,https://www.dekemastate.nl/,,
+http://www.wikidata.org/entity/Q13137168,Museum Sloten,Sloten,http://www.museumsloten.nl,,
+http://www.wikidata.org/entity/Q13137171,Museum Sorgdrager,Ameland,http://www.amelandermusea.nl,,
+http://www.wikidata.org/entity/Q13137340,Oold Ark,Ooststellingwerf,https://www.museumenmolenmakkinga.nl/,,
+http://www.wikidata.org/entity/Q13137710,Ruurd Wiersma Museum,Noardeast-Frysland,https://www.ruurdwiersma.nl/,,
+http://www.wikidata.org/entity/Q13138176,Landbouw-Juttersmuseum Swartwoude,Buren,http://www.amelandermusea.nl,,
+http://www.wikidata.org/entity/Q13138349,Titus Brandsma Museum,Bolsward,http://www.titusbrandsmamuseum.nl,,
+http://www.wikidata.org/entity/Q131389412,MuseumFabriek Winterswijk,Winterswijk,https://vereniginghetmuseum.nl/museum-fabriek/,,
+http://www.wikidata.org/entity/Q131407014,Museum Huys Auerhaen,Alkmaar,https://www.huysauerhaen.nl/,,
+http://www.wikidata.org/entity/Q1324489,Keramiekmuseum Princessehof,Leeuwarden,https://www.princessehof.nl,keramiekmuseum,ceramics museum
+http://www.wikidata.org/entity/Q132654965,Flower Art Museum,Aalsmeer,https://www.flowerartmuseum.nl/,tentoonstellingszaal,exhibition hall
+http://www.wikidata.org/entity/Q133734238,Flessenscheepjesmuseum,Enkhuizen,http://www.flessenscheepjesmuseum.nl,,
+http://www.wikidata.org/entity/Q134054379,Cameramuseum Zierikzee,Schouwen-Duiveland,https://cameramuseum.nl/,,
+http://www.wikidata.org/entity/Q13433035,Kaarsenmuseum,Baarle-Hertog,https://kaarsenmuseum.nl/,,
+http://www.wikidata.org/entity/Q13437069,Belasting & Douane Museum,Rotterdam,http://www.bdmuseum.nl,,
+http://www.wikidata.org/entity/Q13446573,Bunkermuseum Zoutelande,Veere,https://www.bunkerbehoud.com/,bunker; militair museum,bunker; military museum
+http://www.wikidata.org/entity/Q1345886,Internationaal Klompenmuseum,Eelde,http://www.klompenmuseum.nl/,,
+http://www.wikidata.org/entity/Q1350009,H'Art Museum,Amsterdam,https://hartmuseum.nl/nl/,kunstmuseum,art museum
+http://www.wikidata.org/entity/Q135069089,Museum Huize Keizer,Dinkelland,https://huizekeizer.nl/,museumhuis,museum house
+http://www.wikidata.org/entity/Q135116725,Nxt Museum,Amsterdam,https://nxtmuseum.com/,,
+http://www.wikidata.org/entity/Q135256504,Stadsmuseum Oudewater,Oudewater,https://geschiedkundigeverenigingoudewater.nl/gebouwen-van-oudewater/stadsmuseum/,stadsmuseum,city museum
+http://www.wikidata.org/entity/Q135441375,SCHUNCK Museum,Heerlen,http://www.schunck.nl,,
+http://www.wikidata.org/entity/Q13574438,Driels Museum,Maasdriel,https://drielsmuseum.nl,,
+http://www.wikidata.org/entity/Q13612139,Museum de Oude Wolden,Westerwolde,http://www.museumdeoudewolden.nl,streekmuseum,Regional Museum
+http://www.wikidata.org/entity/Q13636575,Flipje & Streekmuseum,Tiel,http://www.streekmuseumtiel.nl,,
+http://www.wikidata.org/entity/Q136419680,Suriname Museum,Amsterdam,https://surinamemuseum.nl/,,
+http://www.wikidata.org/entity/Q136473440,Hendrick Hamel Museum,Gorinchem,https://hendrickhamelmuseum.nl/,,
+http://www.wikidata.org/entity/Q136661,Zaanse Schans,Zaanstad,http://www.zaanseschans.nl,buurtschap; openluchtmuseum,community; open-air museum
+http://www.wikidata.org/entity/Q136683426,Achterhoeks Openluchtmuseum,Erve Kots,https://www.achterhoeksopenluchtmuseum.nl,openluchtmuseum,open-air museum
+http://www.wikidata.org/entity/Q136773018,Museum Beesel,Beesel,https://museumbeesel.nl/,,
+http://www.wikidata.org/entity/Q137162400,Next Nature,Eindhoven,https://nextnature.org/en; https://nextnature.org/nl,,
+http://www.wikidata.org/entity/Q13726962,Historisch Museum Hengelo,Hengelo,http://www.museumhengelo.nl,,
+http://www.wikidata.org/entity/Q13736930,Jenevermuseum,Schiedam,http://www.jenevermuseum.nl,,
+http://www.wikidata.org/entity/Q137408861,Illusion Brussels,Brussel,https://illusionbrussels.be/en; https://illusionbrussels.be/fr; https://illusionbrussels.be/nl,,
+http://www.wikidata.org/entity/Q13743314,Kijk & Luistermuseum,Ede,http://www.kijkenluistermuseum.nl,,
+http://www.wikidata.org/entity/Q13815394,Marie Tak van Poortvliet Museum,Domburg,https://marietakmuseum.nl/,informatiecentrum voor toeristen; kunstmuseumgebouw,tourist information centre; art museum building
+http://www.wikidata.org/entity/Q138511721,Mutek,Haarlem,https://mutekmuseum.nl/,,
+http://www.wikidata.org/entity/Q138655301,Achterhoeks Museum 1940-1945,Hengelo,https://www.achterhoeksmuseum1940-1945.nl/,militair museum,Military Museum
+http://www.wikidata.org/entity/Q138656998,Memory Vrijheidsmuseum,Hellendoorn,https://memorymuseum.nl/,,
+http://www.wikidata.org/entity/Q13866168,Museum De Pont,Tilburg,http://www.depont.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q13882236,Nederlands Bakkerijmuseum,Gelderland,http://www.bakkerijmuseum.nl,,
+http://www.wikidata.org/entity/Q13882261,Nederlands Tegelmuseum,Ede,http://www.nederlandstegelmuseum.nl,,
+http://www.wikidata.org/entity/Q138952286,The Apple Museum,Utrecht,https://applemuseum.nl/,,
+http://www.wikidata.org/entity/Q13973090,Oude Ambachten & Speelgoed Museum,Terschuur,https://www.ambachtenmuseum.nl,ambachtsmuseum; speelgoedmuseum,Craft Museum; Toy Museum
+http://www.wikidata.org/entity/Q139934239,Maastricht Museum,Maastricht,https://www.maastrichtmuseum.nl/,,
+http://www.wikidata.org/entity/Q141355,Museum Hindeloopen,Hindeloopen,http://www.museumhindeloopen.nl,,historical museum; colonial museum
+http://www.wikidata.org/entity/Q1422000,NEMO,Amsterdam,http://www.nemosciencemuseum.nl,wetenschapsmuseum,Science Museum
+http://www.wikidata.org/entity/Q1434449,Fluweelengrot,Valkenburg aan de Geul,http://www.kasteelvalkenburg.nl,groeve; mijnbouwmuseum,quarry; mining museum
+http://www.wikidata.org/entity/Q14510918,Universiteitsmuseum Utrecht,Utrecht,http://universiteitsmuseum.nl/,universiteitsmuseum,University Museum
+http://www.wikidata.org/entity/Q14544962,Woonbootmuseum,Amsterdam,https://www.houseboatmuseum.nl/,woonboot,houseboat
+http://www.wikidata.org/entity/Q1456512,Louwman Museum,Den Haag,https://www.louwmanmuseum.nl/,automobielmuseum,Automotive Museum
+http://www.wikidata.org/entity/Q14629603,Gevangenismuseum,Noordenveld,http://www.gevangenismuseum.nl/,gevangenismuseum,prison museum
+http://www.wikidata.org/entity/Q14644903,Museum Warkums Erfskip,Workum,http://www.warkumserfskip.nl/,,
+http://www.wikidata.org/entity/Q14744170,Stoombierbrouwerij De Keyzer,Maastricht,http://www.brouwerijbosch.nl/,brouwerij,brewery
+http://www.wikidata.org/entity/Q14753871,Villa Mondriaan,Winterswijk,https://villamondriaan.nl/de; https://villamondriaan.nl/en; https://villamondriaan.nl/nl,,
+http://www.wikidata.org/entity/Q14856958,Weegschaalmuseum,Naarden,http://www.weegschaalmuseum.nl,,
+http://www.wikidata.org/entity/Q14943525,Keatsmuseum,Waadhoeke,https://www.keatsmuseum.frl/,sportmuseum,sports museum
+http://www.wikidata.org/entity/Q1499958,Kunstmuseum Den Haag,Den Haag,https://www.kunstmuseum.nl,kunstmuseum,art museum
+http://www.wikidata.org/entity/Q1505892,Rijksmuseum Twenthe,Enschede,https://www.rijksmuseumtwenthe.nl/,kunstmuseumgebouw; nationaal museum,art museum building; national museum
+http://www.wikidata.org/entity/Q15124806,Pianola museum,Amsterdam,http://www.pianola.nl,,
+http://www.wikidata.org/entity/Q1514270,Museumpark Orientalis,Berg en Dal,https://www.museumparkorientalis.com/de; https://www.museumparkorientalis.com/en; https://www.museumparkorientalis.nl,non-profitorganisatie; openluchtmuseum,non-profit organisation; open-air museum
+http://www.wikidata.org/entity/Q1519288,Sonnenborgh,Utrecht,http://www.sonnenborgh.nl,astronomisch observatorium,astronomical observatory
+http://www.wikidata.org/entity/Q15224245,Historisch Museum Den Briel,Voorne aan Zee,http://www.historischmuseumdenbriel.nl,,
+http://www.wikidata.org/entity/Q153193,Thermenmuseum,Heerlen,https://www.thermenmuseum.nl/; https://www.thermenmuseum.nl/de/; https://www.thermenmuseum.nl/en/,,
+http://www.wikidata.org/entity/Q1538389,Eye Filmmuseum,Amsterdam,https://www.eyefilm.nl/,bioscoop; cinematheek; filmarchief; filmmuseum,cinema; cinema; film archive; film museum
+http://www.wikidata.org/entity/Q1542668,Groninger Museum,Groningen,http://www.groningermuseum.nl,,
+http://www.wikidata.org/entity/Q15874141,Cuypershuis,Roermond,http://www.cuypershuisroermond.nl/,werkplaats; woonhuis,workshop; residential house
+http://www.wikidata.org/entity/Q15876366,Historiehuis Roermond,Roermond,http://www.historiehuis.nl/,,
+http://www.wikidata.org/entity/Q15879540,Museum Hert fan Fryslan,Leeuwarden,https://museumhertfanfryslan.nl/,,
+http://www.wikidata.org/entity/Q15879541,Museum In 't Houten Huis,Graft-De Rijp,http://www.houtenhuis.nl,,
+http://www.wikidata.org/entity/Q15879552,Muzeeaquarium Delfzijl,Eemsdelta,http://www.muzeeaquarium.nl; https://www.muzeeaquarium.nl/,publiek aquarium; zeeaquarium,public aquarium; sea aquarium
+http://www.wikidata.org/entity/Q15882401,Stoomhoutzagerij Nahuis,Oost Gelre,http://stoomzagerij.nl,,
+http://www.wikidata.org/entity/Q15882926,Timmerfabriek,Maastricht,http://www.bureau-europa.nl,fabriek,factory
+http://www.wikidata.org/entity/Q15883459,Van Gogh Village Museum,"Nuenen, Gerwen en Nederwetten",https://www.vangoghvillagenuenen.nl,,
+http://www.wikidata.org/entity/Q15961602,Ajax Experience,Amsterdam,http://www.ajaxexperience.nl,,
+http://www.wikidata.org/entity/Q15961660,Vestingmuseum Oudeschans,Oudeschans,http://www.vesting-oudeschans.nl,militair museum; streekmuseum,military museum; regional museum
+http://www.wikidata.org/entity/Q15962410,Rietveldpaviljoen De Zonnehof,Amersfoort,https://033rietveldpaviljoen.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q15964404,World of Ajax,Amsterdam,http://www.amsterdamarena.nl/Tours/Tours/Tour/World-of-Ajax-Stadium-Tour.htm,,
+http://www.wikidata.org/entity/Q15991959,CRASH Luchtoorlog- en Verzetsmuseum '40-'45,Haarlemmermeer,http://www.crash40-45.nl,,
+http://www.wikidata.org/entity/Q16144508,Vlasmuseum 't Vlasschuurken,Terneuzen,https://www.vlasmuseum.nl,,
+http://www.wikidata.org/entity/Q16151477,Wereldbodemmuseum,Wageningen,http://wsm.isric.org/,,
+http://www.wikidata.org/entity/Q1616123,Het Scheepvaartmuseum,Amsterdam,https://www.hetscheepvaartmuseum.nl/,militair museum; nationaal museum; scheepvaartmuseum,military museum; national museum; shipping museum
+http://www.wikidata.org/entity/Q1624224,Museum Speelklok,Utrecht,https://www.museumspeelklok.nl/,muziekinstrumentenmuseum,musical instruments museum
+http://www.wikidata.org/entity/Q1634251,Museum aan het Vrijthof,Maastricht,http://www.museumaanhetvrijthof.nl,gebouw,building
+http://www.wikidata.org/entity/Q16466081,Huizer Museum Het Schoutenhuis,Huizen,http://www.huizermuseum.nl,,
+http://www.wikidata.org/entity/Q165366,Anne Frank Huis,Amsterdam,http://www.annefrank.org/,museumhuis; oorlogsmonument,museum house; war monument
+http://www.wikidata.org/entity/Q1662109,SieboldHuis,Leiden,https://www.sieboldhuis.org/en/,,
+http://www.wikidata.org/entity/Q16647941,Ellert en Brammertmuseum,Coevorden,http://www.ellertenbrammert.nl,,
+http://www.wikidata.org/entity/Q1666474,Beeldenpark Zwijndrecht,Zwijndrecht,https://www.beeldenparkdrechtoevers.nl/zwijndrecht-a-g/,beeldenpark,image park
+http://www.wikidata.org/entity/Q1668856,Kunsthal Rotterdam,Rotterdam,http://www.kunsthal.nl,kunstmuseumgebouw; tentoonstellingszaal,art museum building; exhibition hall
+http://www.wikidata.org/entity/Q17146713,Torture Museum Amsterdam,Amsterdam,http://www.torturemuseum.com/,,
+http://www.wikidata.org/entity/Q17153751,Nationaal Museum van Wereldculturen,,https://collectie.wereldculturen.nl,collectie,collection
+http://www.wikidata.org/entity/Q17190029,Museum Slager,'s-Hertogenbosch,http://www.museumslager.nl,,
+http://www.wikidata.org/entity/Q17329530,Pier Pandertempel,Leeuwarden,http://www.pierpander.nl,gebouw,building
+http://www.wikidata.org/entity/Q17339437,Wereldmuseum Leiden,Leiden,https://leiden.wereldmuseum.nl/,nationaal museum,National Museum
+http://www.wikidata.org/entity/Q17340038,Dolhuys,Dordrecht,http://www.hetdolhuys.nl,woonhuis,house
+http://www.wikidata.org/entity/Q17342909,Humanity House,Den Haag,https://www.humanityhouse.org/,,
+http://www.wikidata.org/entity/Q1735318,Kasteel de Haar,Utrecht,https://www.kasteeldehaar.nl,complex van meerdere objecten; kasteel,complex of several objects; castle
+http://www.wikidata.org/entity/Q1738414,Panorama Mesdag,Den Haag,https://panorama-mesdag.nl/,,
+http://www.wikidata.org/entity/Q17402020,Marinemuseum,Den Helder,https://www.marinemuseum.nl/,marinemuseum,Marine Museum
+http://www.wikidata.org/entity/Q17439945,Spinozahuisje,Katwijk,http://www.spinozahuis.nl,museumhuis; woonhuis,Museum House; Home
+http://www.wikidata.org/entity/Q17441421,Museum Staphorst,Staphorst,https://museumstaphorst.nl/,Staphorster boerderij; historisch museum,Staphorster farmhouse; historical museum
+http://www.wikidata.org/entity/Q17443160,Oudheidkamer Texel,Texel,http://www.oudheidkamertexel.nl,gebouw,building
+http://www.wikidata.org/entity/Q17457800,Museum Valkenburg,Valkenburg aan de Geul,https://www.museumvalkenburg.nl,postkantoor,post office
+http://www.wikidata.org/entity/Q17517652,'t Kiekhuus,Weststellingwerf,http://www.kiekhuus.nl,,
+http://www.wikidata.org/entity/Q17609116,In den Halven Maen,Voorne aan Zee,http://www.indenhalvenmaen.nl,,
+http://www.wikidata.org/entity/Q17611858,Stadsmuseum Almelo,Almelo,http://www.stadsmuseumalmelo.nl,,
+http://www.wikidata.org/entity/Q17613504,Museum Stad Appingedam,Eemsdelta,http://www.museumstadappingedam.nl,gebouw,building
+http://www.wikidata.org/entity/Q17619087,"Museum ""Terug in de tijd""",Leudal,https://www.museumterugindetijd.nl/,,
+http://www.wikidata.org/entity/Q1781661,Legermuseum,Delft,https://www.nmm.nl,gebouw; militair museum,building; military museum
+http://www.wikidata.org/entity/Q1782422,Van Abbemuseum,Eindhoven,http://www.vanabbemuseum.nl/; https://vanabbemuseum.nl/en/,kunstmuseum,art museum
+http://www.wikidata.org/entity/Q18088203,Ikonenmuseum,Kampen,http://www.ikonenmuseumkampen.nl,,
+http://www.wikidata.org/entity/Q18089004,Noord-Veluws Museum,Nunspeet,http://www.noord-veluws-museum.nl,,
+http://www.wikidata.org/entity/Q1810629,Kapiteinshuis Pekela,Pekela,http://www.kapiteinshuis.nl,,
+http://www.wikidata.org/entity/Q18169481,Micropia,Amsterdam,http://www.micropia.nl,,
+http://www.wikidata.org/entity/Q18169482,Multatuli Museum,Amsterdam,http://www.multatuli-museum.nl/home,,
+http://www.wikidata.org/entity/Q1819360,Stadsmuseum Steenwijk,Steenwijkerland,http://www.stadsmuseumsteenwijk.nl,gebouw,building
+http://www.wikidata.org/entity/Q1820897,Amsterdam Museum,Amsterdam,http://amsterdammuseum.nl/,,
+http://www.wikidata.org/entity/Q1821169,Literatuurmuseum,Den Haag,http://www.literatuurmuseum.nl,literatuurmuseum,Literature Museum
+http://www.wikidata.org/entity/Q1823028,Oorlogsmuseum Overloon,Land van Cuijk,https://www.oorlogsmuseum.nl,militair museum; nationaal museum,military museum; national museum
+http://www.wikidata.org/entity/Q18286705,Stelling 12H,Vlieland,https://bunkermuseumvlieland.nl/,bunker; natuurgebied,bunker; nature reserve
+http://www.wikidata.org/entity/Q18326395,Noord-Nederlands Trein & Tram Museum,Menterwolde,http://www.nnttm.nl/,,
+http://www.wikidata.org/entity/Q1840874,Radiomuseum,Rotterdam,http://www.rotterdamsradiomuseum.nl/,,
+http://www.wikidata.org/entity/Q1842735,Museum De Roos,Geertruidenberg,http://www.museumderoos.nl,,
+http://www.wikidata.org/entity/Q18433388,Eyewitness Museum,Beek,https://www.eyewitnesswo2.nl/,,
+http://www.wikidata.org/entity/Q1847215,Jheronimus Bosch Art Center,'s-Hertogenbosch,http://www.jheronimusbosch-artcenter.nl/,,
+http://www.wikidata.org/entity/Q1849293,De Eendracht,Eanjum,https://anjumermolen.nl/,stellingmolen; windmolen,Of a cylinder capacity exceeding 1000 cm3 but not exceeding 1000 cm3
+http://www.wikidata.org/entity/Q1852477,Bevrijdingsmuseum Zeeland,Borsele,https://bevrijdingsmuseumzeeland.nl/,militair museum,Military Museum
+http://www.wikidata.org/entity/Q1854760,Collectie Brands,Emmen,http://www.collectie-brands.nl,,
+http://www.wikidata.org/entity/Q1854948,Natuurmuseum Fryslan,Leeuwarden,https://natuurmuseumfryslan.nl/,,
+http://www.wikidata.org/entity/Q18558954,Museum der Koninklijke Marechaussee,Buren,https://www.marechausseemuseum.nl; https://www.marechausseemuseum.nl/en,,
+http://www.wikidata.org/entity/Q1860378,Rijksmuseum van Oudheden,Leiden,http://www.rmo.nl/,nationaal museum,National Museum
+http://www.wikidata.org/entity/Q18608766,Museum Het Leids Wevershuis,Leiden,http://www.wevershuis.nl/home/english/,,
+http://www.wikidata.org/entity/Q1863317,Museum Dokkum,Dongeradeel,https://www.museumdokkum.nl/,,
+http://www.wikidata.org/entity/Q18654836,Huis van Hilde,Castricum,https://huisvanhilde.nl/,archeologie,archaeology
+http://www.wikidata.org/entity/Q1869397,Vrijheidsmuseum,Berg en Dal,https://vrijheidsmuseum.nl,gebouw; vrijwilligersorganisatie,building; voluntary organisation
+http://www.wikidata.org/entity/Q1871689,Escher in het Paleis,Den Haag,http://www.escherinhetpaleis.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q1872824,Arboretum Trompenburg,Rotterdam,http://www.trompenburg.nl,arboretum; hortus botanicus; park,Arboretum; hortus botanicus; park
+http://www.wikidata.org/entity/Q1875967,Het Bolwerk,Sluis,https://www.staatsspaanselinies.eu/nl/museabezoekerscentra/museum-het-bolwerk.htm,,
+http://www.wikidata.org/entity/Q18775346,Scheepswerf Meerman,Middelburg,https://werfarnemuiden.nl/,complex van meerdere objecten; scheepswerf,complex of multiple objects; shipyard
+http://www.wikidata.org/entity/Q1886176,Museum Willet-Holthuysen,Amsterdam,https://www.amsterdammuseum.nl/tickets-en-bezoek/locaties/huis-willet-holthuysen/3632,,
+http://www.wikidata.org/entity/Q1886369,Museum Henriette Polak,Zutphen,https://museazutphen.nl/museum-henriette-polak/,,
+http://www.wikidata.org/entity/Q1888033,Drents Museum De Buitenplaats,Tynaarlo,https://www.dmdebuitenplaats.nl,,
+http://www.wikidata.org/entity/Q1889816,Natuurmuseum Brabant,Tilburg,http://www.natuurmuseumbrabant.nl,,
+http://www.wikidata.org/entity/Q190804,Rijksmuseum Amsterdam,Amsterdam,https://www.rijksmuseum.nl/; https://www.rijksmuseum.nl/de; https://www.rijksmuseum.nl/en; https://www.rijksmuseum.nl/es; https://www.rijksmuseum.nl/fr; https://www.rijksmuseum.nl/it; https://www.rijksmuseum.nl/jp; https://www.rijksmuseum.nl/pt; https://www.rijksmuseum.nl/ru,dataset; historisch museum; kunstmuseumgebouw; nationaal museum; productiemaatschappij,dataset; historical museum; art museum building; national museum; production company
+http://www.wikidata.org/entity/Q1911968,Industrieel Smalspoor Museum,Emmen,http://www.smalspoorcentrum.nl/,,
+http://www.wikidata.org/entity/Q1913176,Kunsthal KAdE,Amersfoort,http://www.kunsthalkade.nl,,
+http://www.wikidata.org/entity/Q1919228,Fruitteeltmuseum,Kapelle,http://www.fruitteeltmuseum.nl,,
+http://www.wikidata.org/entity/Q1920457,Havenmuseum,Rotterdam,http://www.havenmuseum.nl/,,
+http://www.wikidata.org/entity/Q1925731,Molen van Sloten,Amsterdam,https://molenvansloten.nl/,stellingmolen; windmolen,Of a cylinder capacity exceeding 1000 cm3 but not exceeding 1000 cm3
+http://www.wikidata.org/entity/Q1934808,Militaire Luchtvaart Museum,Soest,http://www.militaireluchtvaartmuseum.nl,luchtvaartmuseum; militair museum,Aeronautical Museum; Military Museum
+http://www.wikidata.org/entity/Q1939296,Nederlands Vestingmuseum,Naarden,https://www.vestingmuseum.nl/,militair museum,Military Museum
+http://www.wikidata.org/entity/Q1942351,It Damshuis,Opsterland,https://www.damshus.nl/,,open-air museum
+http://www.wikidata.org/entity/Q1943968,Wilhelmietenmuseum,Woensdrecht,https://www.wilhelmietenmuseum.nl/,,
+http://www.wikidata.org/entity/Q19461133,Continium Discovery Center,Kerkrade,http://www.continium.nl; http://www.continium.nl/; https://www.continium.nl/de,gebouw,building
+http://www.wikidata.org/entity/Q1951586,muZIEum,Nijmegen,https://muzieum.nl,,
+http://www.wikidata.org/entity/Q1954331,Museon-Omniversum,Den Haag,https://www.museon-omniversum.nl/pagina/de-collectie-online,,
+http://www.wikidata.org/entity/Q1954418,Museum Buurtspoorweg,Haaksbergen,https://www.museumbuurtspoorweg.nl/,spoorlijn; toeristische spoorweg; vervoermuseum,railway line; tourist railway; transport museum
+http://www.wikidata.org/entity/Q1954426,Museum Catharijneconvent,Utrecht,https://catharijneconvent.nl/,,
+http://www.wikidata.org/entity/Q1954787,Beeld en Geluid Den Haag,Den Haag,http://www.muscom.nl/,postmuseum,postmuseum
+http://www.wikidata.org/entity/Q19580584,Medemblik steam museum,Medemblik,https://stoommachinemuseum.nl,historisch museum,historical museum
+http://www.wikidata.org/entity/Q1960748,Nationaal Baggermuseum,Sliedrecht,http://www.baggermuseum.nl/; https://www.nationaalbaggermuseum.nl/welcome/,,
+http://www.wikidata.org/entity/Q1960924,Museum Paul Tetar van Elven,Delft,http://tetar.nl/,,
+http://www.wikidata.org/entity/Q1967125,Voerman Stadsmuseum Hattem,Hattem,http://www.voermanmuseumhattem.nl,,
+http://www.wikidata.org/entity/Q1967608,Universiteitsmuseum,Groningen,https://www.rug.nl/society-business/university-museum/,universiteitsmuseum,University Museum
+http://www.wikidata.org/entity/Q1969635,Geniemuseum,Vught,http://www.geniemuseum.nl,,
+http://www.wikidata.org/entity/Q1978798,De Koperen Knop,Hardinxveld-Giessendam,http://www.koperenknop.nl,boerderij,Farm
+http://www.wikidata.org/entity/Q1980158,Dutch Museum of working-class districts,Utrecht,http://www.volksbuurtmuseum.nl,,
+http://www.wikidata.org/entity/Q1982236,Stratemakerstoren,Nijmegen,https://www.debastei.nl/nl,gebouw,building
+http://www.wikidata.org/entity/Q19827882,Museum Kaap Skil,Oudeschild,http://www.kaapskil.nl,,
+http://www.wikidata.org/entity/Q19831513,Stedelijk Museum Coevorden,Coevorden,http://www.museumcoevorden.nl,,
+http://www.wikidata.org/entity/Q19840696,Speelgoedmuseum Deventer,Deventer,http://www.speelgoedmuseumdeventer.nl,,
+http://www.wikidata.org/entity/Q19847424,Hoogovensmuseum,Velsen,http://www.hoogovensmuseum.nl,,
+http://www.wikidata.org/entity/Q1986962,nijntje museum,Utrecht,http://nijntjemuseum.nl/,,
+http://www.wikidata.org/entity/Q1987875,Museum aan de Maas,Dordrecht,http://www.dordtspatriciershuis.nl,,
+http://www.wikidata.org/entity/Q19912241,Venrays Museum,Venray,https://venraysmuseum.nl/,,
+http://www.wikidata.org/entity/Q1994770,Museum van Bommel van Dam,Venlo,http://www.vanbommelvandam.nl; https://www.vanbommelvandam.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q19971911,Stadsmuseum Doetinchem,Doetinchem,http://www.stadsmuseumdoetinchem.nl,,
+http://www.wikidata.org/entity/Q19974153,Nationaal Monument Kamp Amersfoort,Leusden,https://www.kampamersfoort.nl/,gedenkmonument,memorial
+http://www.wikidata.org/entity/Q2004350,Noordelijk Scheepvaartmuseum,Groningen,http://www.noordelijkscheepvaartmuseum.nl/,scheepvaartmuseum,Maritime Museum
+http://www.wikidata.org/entity/Q20046432,Land Art Delft,Delft,https://www.landartdelft.nl/,beeldenpark,image park
+http://www.wikidata.org/entity/Q2011870,Museum Heerenveen,Heerenveen,http://www.heerenveenmuseum.nl/,,
+http://www.wikidata.org/entity/Q2012221,Kasteel Doornenburg,Lingewaard,http://www.kasteeldoornenburg.nl,kasteel,castle
+http://www.wikidata.org/entity/Q2020907,Amsterdam Tulip Museum,Amsterdam,http://www.amsterdamtulipmuseum.com,,
+http://www.wikidata.org/entity/Q2021677,Hofje van Mevrouw Van Aerden,Leerdam,https://www.hofjevanaerden.nl/,hofje,court
+http://www.wikidata.org/entity/Q2022136,Keramiekcentrum Tiendschuur Tegelen,Venlo,http://www.tiendschuur.net,keramiekmuseum,ceramics museum
+http://www.wikidata.org/entity/Q2022448,Nationaal Brandweermuseum,Voorne aan Zee,http://www.nationaalbrandweermuseum.nl,,
+http://www.wikidata.org/entity/Q2024253,Interart,Bernheze,http://www.interart.nl,beeldenpark,image park
+http://www.wikidata.org/entity/Q2035934,Museumhaven Gouda,Gouda,http://www.museumhavengouda.nl,,
+http://www.wikidata.org/entity/Q2036143,Zoutmuseum,Hof van Twente,http://www.zoutmuseum.nl,gemeentehuis,Town Hall
+http://www.wikidata.org/entity/Q2037776,Houweling Telecom Museum,Rotterdam,https://www.houwelingtelecommuseum.nl/,,
+http://www.wikidata.org/entity/Q2042754,Wereldmuseum Rotterdam,Rotterdam,https://rotterdam.wereldmuseum.nl/,,
+http://www.wikidata.org/entity/Q2047615,Kasteel Rosendael,Rozendaal,http://www.glk.nl/rosendael,burcht; complex van meerdere objecten; kasteel; landgoed,castle; complex of several objects; castle; estate
+http://www.wikidata.org/entity/Q2050166,Museum van de Geest | Dolhuys,Haarlem,https://museumvandegeest.nl/,,
+http://www.wikidata.org/entity/Q2050538,Historisch Museum Vriezenveen,Vriezenveen,https://www.museumvriezenveen.nl/,,
+http://www.wikidata.org/entity/Q2054056,Nederlands Mijnmuseum,Heerlen,https://www.nederlandsmijnmuseum.nl/,mijnbouwmuseum,Mining Museum
+http://www.wikidata.org/entity/Q2057900,Oosterscheldemuseum,Yerseke,http://www.oosterscheldemuseum.nl/,,
+http://www.wikidata.org/entity/Q20615906,Duikmuseum,De Friese Meren,http://www.duikmuseum.nl/,,
+http://www.wikidata.org/entity/Q20616905,Fries Verzetsmuseum,Leeuwarden,https://www.friesverzetsmuseum.nl/; https://www.friesverzetsmuseum.nl/en,,
+http://www.wikidata.org/entity/Q20618174,Fries Landbouwmuseum,Leeuwarden,http://www.frieslandbouwmuseum.nl,,
+http://www.wikidata.org/entity/Q20621177,Joods Historisch Kindermuseum,Amsterdam,https://jck.nl/nl/locatie/jhm-kindermuseum,,
+http://www.wikidata.org/entity/Q20623554,Puzzelmuseum,De Friese Meren,https://puzzelmuseum.nl/Home.html,,
+http://www.wikidata.org/entity/Q20644426,Stadsmuseum Rhenen,Rhenen,https://stadsmuseumrhenen.nl,,
+http://www.wikidata.org/entity/Q2070053,Openluchtmuseum Het Hoogeland,Eemsmond,http://www.hethoogeland.com,openluchtmuseum,open-air museum
+http://www.wikidata.org/entity/Q2070831,De Palmboom,Schiedam,https://www.deschiedamsemolens.nl/museummolen/,stellingmolen; windmolen,Of a cylinder capacity exceeding 1000 cm3 but not exceeding 1000 cm3
+http://www.wikidata.org/entity/Q20745706,Marker Museum,Marken,http://www.markermuseum.nl/,,
+http://www.wikidata.org/entity/Q2077489,Tassenmuseum Hendrikje,Amsterdam,http://www.tassenmuseum.nl/,,
+http://www.wikidata.org/entity/Q2085575,Gdyniamuseum,Terneuzen,https://www.oorlogsmuseumgdynia.nl/,,
+http://www.wikidata.org/entity/Q2086892,Schelpenmuseum Paal 14,Schiermonnikoog,http://www.schelpenmuseum.nl,,
+http://www.wikidata.org/entity/Q2087161,Heineken Experience,Amsterdam,http://www.heinekenexperience.com/,informatiecentrum voor toeristen,tourist information centre
+http://www.wikidata.org/entity/Q20888634,Nieuwe Instituut,Rotterdam,https://nieuweinstituut.nl/,architectuurmuseum; ontwerpmuseum,architecture museum; design museum
+http://www.wikidata.org/entity/Q20962412,Museum Schokland,Noordoostpolder,http://www.museumschokland.nl,,
+http://www.wikidata.org/entity/Q20970639,Museum Weesp,Amsterdam,http://www.museumweesp.nl/,,
+http://www.wikidata.org/entity/Q20970911,Museum Maassluis,Maassluis,http://www.maassluismuseum.nl; https://www.museummaassluis.nl/,,
+http://www.wikidata.org/entity/Q20979832,Museum De Zwarte Tulp,Lisse,http://www.museumdezwartetulp.nl/,,
+http://www.wikidata.org/entity/Q2098441,ARCAM,Amsterdam,https://arcam.nl,,
+http://www.wikidata.org/entity/Q2098586,Museum De Lakenhal,Leiden,http://www.lakenhal.nl/,,
+http://www.wikidata.org/entity/Q20991292,Tabaksteeltmuseum,Utrechtse Heuvelrug,http://www.tabaksteeltmuseum.nl/,landbouwmuseum,agricultural museum
+http://www.wikidata.org/entity/Q2099445,Klooster Ter Apel,Westerwolde,https://www.kloosterterapel.nl,kloostercomplex; religieuze gemeenschap,monastery complex; religious community
+http://www.wikidata.org/entity/Q21004657,Het Depot,Wageningen,http://www.hetdepot.nl/,,
+http://www.wikidata.org/entity/Q2104302,Muzee Scheveningen,Den Haag,http://www.muzeescheveningen.nl,,
+http://www.wikidata.org/entity/Q21064115,Museum Engelandvaarders,Noordwijk,http://www.museumengelandvaarders.nl; https://www.museumengelandvaarders.nl/,,
+http://www.wikidata.org/entity/Q21113770,Nationaal Sleepvaart Museum,Maassluis,http://www.nationaalsleepvaartmuseum.nl,scheepvaartmuseum,Maritime Museum
+http://www.wikidata.org/entity/Q2112422,Museum voor Religieuze Kunst,Uden,https://www.museumkrona.nl/nl/,,
+http://www.wikidata.org/entity/Q2113572,Vlasserij-Suikermuseum,Klundert,http://www.vlasserij-suikermuseum.nl,,
+http://www.wikidata.org/entity/Q2114028,Museum Arnhem,Arnhem,https://www.museumarnhem.nl/en; https://www.museumarnhem.nl/nl,non-profitorganisatie,Non-profit organisation
+http://www.wikidata.org/entity/Q2119394,Museum Vekemans,Boxtel,http://www.museumvekemans.nl,,
+http://www.wikidata.org/entity/Q2121036,Hansenhof,Venlo,https://www.veldense-volkscultuur.nl/museum-hansenhof,boerderij; streekmuseum,farm; regional museum
+http://www.wikidata.org/entity/Q2126143,Museum De Locht,Horst aan de Maas,http://www.delocht.nl,openluchtmuseum,open-air museum
+http://www.wikidata.org/entity/Q2127133,Buitenplaats Kasteel Wijlre,Gulpen-Wittem,https://kasteelwijlre.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q2128917,Internationaal Brandweermuseum Rijssen,Rijssen,https://www.brandweermuseum.nl/,,
+http://www.wikidata.org/entity/Q2130109,Museum Nairac,Barneveld,http://www.nairac.nl,,
+http://www.wikidata.org/entity/Q2130225,Museum Rotterdam,Rotterdam,https://museumrotterdam.nl/en/; https://www.museumrotterdam.nl/,,
+http://www.wikidata.org/entity/Q2131198,Slot Zuylen,Stichtse Vecht,http://www.slotzuylen.nl/,complex van meerdere objecten; kasteel,complex of several objects; castle
+http://www.wikidata.org/entity/Q2134254,The Amsterdam Dungeon,Amsterdam,http://www.the-dungeons.nl/locations/,privémuseum,private museum
+http://www.wikidata.org/entity/Q2137737,Nederlands Stripmuseum,Groningen,http://www.stripmuseum.nl/,,
+http://www.wikidata.org/entity/Q2141968,Huis Marseille,Amsterdam,http://www.huismarseille.nl/en/,,
+http://www.wikidata.org/entity/Q2144884,Nationaal Glasmuseum,Leerdam,http://www.nationaalglasmuseum.nl,,
+http://www.wikidata.org/entity/Q2146404,Nationaal Reddingmuseum Dorus Rijkers,Den Helder,http://www.reddingmuseum.nl,,
+http://www.wikidata.org/entity/Q2153292,Science Centre Delft,Delft,https://www.tudelft.nl/sciencecentre/,techniekmuseum; universiteitsmuseum,Technical Museum; University Museum
+http://www.wikidata.org/entity/Q2153365,Zeeuws Museum,Middelburg,http://www.zeeuwsmuseum.nl/; https://www.zeeuwsmuseum.nl/en; https://www.zeeuwsmuseum.nl/nl,,
+http://www.wikidata.org/entity/Q2153812,Kasteel Verwolde,Lochem,http://www.glk.nl/verwolde,burcht,Castle
+http://www.wikidata.org/entity/Q2155602,Bussemakerhuis,Borne,http://www.bussemakerhuis.nl,woonhuis,house
+http://www.wikidata.org/entity/Q2161858,Cobra Museum voor Moderne Kunst Amstelveen,Amstelveen,http://www.cobra-museum.nl,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q2168069,Museum Mohlmann,Appingedam,https://www.museummohlmann.nl/,,
+http://www.wikidata.org/entity/Q2168681,De Walvisch,Schiedam,http://www.deschiedamsemolens.nl/museummolen/,stellingmolen; windmolen,Of a cylinder capacity exceeding 1000 cm3 but not exceeding 1000 cm3
+http://www.wikidata.org/entity/Q2169487,Museumbrouwerij De Roos,Hilvarenbeek,https://www.museumbrouwerij.nl/,brouwerij,brewery
+http://www.wikidata.org/entity/Q2170624,Nederlands Steendrukmuseum,Valkenswaard,http://www.steendrukmuseum.nl,,
+http://www.wikidata.org/entity/Q2175336,Kasteel De Cannenburgh,Epe,http://www.glk.nl/cannenburch,complex van meerdere objecten; kasteel,complex of several objects; castle
+http://www.wikidata.org/entity/Q2180455,Atlantikwall Museum Noordwijk,Noordwijk,http://www.museumnoordwijk.nl,,
+http://www.wikidata.org/entity/Q2181432,Maritiem Muzeeum Zeeland,Vlissingen,http://www.muzeeum.nl/,scheepvaartmuseum,Maritime Museum
+http://www.wikidata.org/entity/Q21856381,Expositieruimte onder de Ridderzaal,Den Haag,https://prodemos.nl/den-haag/expositie/,,
+http://www.wikidata.org/entity/Q2186504,Museum Dorestad,Wijk bij Duurstede,http://www.museumdorestad.nl,,
+http://www.wikidata.org/entity/Q2191110,Museum Van Loon,Amsterdam,http://www.museumvanloon.nl/,grachtenpand,canal house
+http://www.wikidata.org/entity/Q2191118,Nederlands Fotomuseum,Rotterdam,https://www.nederlandsfotomuseum.nl,auteursrechthoudersorganisatie; fotomuseum,copyright owner's organisation; photomuseum
+http://www.wikidata.org/entity/Q2193486,Museum van de Twintigste Eeuw,Hoorn,http://www.museumhoorn.nl,,
+http://www.wikidata.org/entity/Q2193739,Huis Sonneveld,Rotterdam,https://www.huissonneveld.nl/,eengezinswoning,single-family house
+http://www.wikidata.org/entity/Q2198718,Poppenspe(e)lmuseum,Heerde,https://www.poppenspelmuseum.nl/,,
+http://www.wikidata.org/entity/Q22006174,Miramar Zeemuseum,Westerveld,http://www.miramar-zeemuseum.nl,,
+http://www.wikidata.org/entity/Q2201512,Museum Het Petershuis,Gennep,https://www.museumhetpetershuis.nl/,gebouw,building
+http://www.wikidata.org/entity/Q22015126,Museum Helmond,Helmond,https://museumhelmond.nl/,,
+http://www.wikidata.org/entity/Q2201887,Observeum,Tietjerksteradeel,https://www.observeum.nl/,observatorium,observatory
+http://www.wikidata.org/entity/Q2202460,Romeinse Katakomben,Valkenburg aan de Geul,http://www.katakomben.nl,bouwwerk,construction
+http://www.wikidata.org/entity/Q2203052,Museumfabriek,Enschede,http://www.demuseumfabriek.nl,,
+http://www.wikidata.org/entity/Q2205322,Luther Museum Amsterdam,Amsterdam,http://www.luthermuseum.nl/,,
+http://www.wikidata.org/entity/Q2206529,Hollandsche Schouwburg,Amsterdam,http://www.hollandscheschouwburg.nl/en; https://jck.nl/locatie/hollandsche-schouwburg,gedenkplaat; oorlogsmonument; theatergebouw,memorial; war monument; theatre building
+http://www.wikidata.org/entity/Q22093641,Ton Smits Huis,Eindhoven,http://www.tonsmitshuis.nl/,,
+http://www.wikidata.org/entity/Q221092,Mauritshuis,Den Haag,https://www.mauritshuis.nl; https://www.mauritshuis.nl/en/,kunstmuseum; nationaal museum,art museum; national museum
+http://www.wikidata.org/entity/Q2216754,Museum Bredius,Den Haag,https://museumbredius.nl/,,
+http://www.wikidata.org/entity/Q2218690,Amsterdam Pipe Museum,Amsterdam,http://www.pijpenkabinet.nl,,
+http://www.wikidata.org/entity/Q22246632,Herinneringscentrum Kamp Westerbork,Midden-Drenthe,https://www.kampwesterbork.nl/,oorlogsmonument,war monument
+http://www.wikidata.org/entity/Q2224691,Persmuseum,Amsterdam,http://persmuseum.nl/,press archive,press archive
+http://www.wikidata.org/entity/Q2231191,Nonke Buusjke,Beekdaelen,http://www.nonkebuusjke.nl/,openluchtmuseum,open-air museum
+http://www.wikidata.org/entity/Q2233016,Pier Pander Museum,Leeuwarden,http://historischcentrumleeuwarden.nl/pier-pander,,
+http://www.wikidata.org/entity/Q224124,Van Gogh Museum,Amsterdam,http://www.vangoghmuseum.nl/,cultureel instituut; kunstmuseumgebouw,cultural institute; art museum building
+http://www.wikidata.org/entity/Q2241346,Princenhaags Museum,Breda,https://princenhaagsmuseum.nl/,,
+http://www.wikidata.org/entity/Q2246299,Nationaal Vlechtmuseum,Weststellingwerf,http://www.vlechtmuseum.nl,,
+http://www.wikidata.org/entity/Q2246858,Nederlands Zilvermuseum Schoonhoven,Krimpenerwaard,http://www.zilvermuseum.com,,
+http://www.wikidata.org/entity/Q22572428,GeoFort,Herwijnen,http://www.geofort.nl,,
+http://www.wikidata.org/entity/Q22572503,Waterliniemuseum Fort bij Vechten,Bunnik,https://waterliniemuseum.nl/,bouwwerk,construction
+http://www.wikidata.org/entity/Q2261423,Museum De Paviljoens,Almere,http://www.depaviljoens.nl/,,
+http://www.wikidata.org/entity/Q2264792,Museum Indruk,Meppel,http://www.drukkerijmuseum-meppel.nl,,
+http://www.wikidata.org/entity/Q2267276,Ethnographisch Museum Artis,Amsterdam,http://home.online.nl/rielka.wulff/home.html,,
+http://www.wikidata.org/entity/Q2267655,Kruideniersmuseum,Utrecht,https://kruideniersmuseum.nl/,,
+http://www.wikidata.org/entity/Q227151,Zr. Ms. Buffel,Hellevoetsluis,https://debuffel.nl/,ironclad; museumschip; preserved watercraft,Ironclad; museum ship; preserved watercraft
+http://www.wikidata.org/entity/Q2280693,Museum De Koloniehof,Westerveld,http://www.dekoloniehof.nl/,,
+http://www.wikidata.org/entity/Q2284283,Schatkamer Sint-Servaasbasiliek,Maastricht,http://www.sintservaas.nl/index24.html,,
+http://www.wikidata.org/entity/Q228640,Zuiderzeemuseum,Enkhuizen,http://www.zuiderzeemuseum.nl/,historisch museum; openluchtmuseum; scheepvaartmuseum,historical museum; open-air museum; shipping museum
+http://www.wikidata.org/entity/Q2298844,Museum Voorlinden,Wassenaar,http://voorlinden.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q2299923,Natuurhistorisch en Volkenkundig Museum,Halderberge,https://www.nvmoudenbosch.nl/,,
+http://www.wikidata.org/entity/Q2303873,Philips Museum,Eindhoven,https://www.philips-museum.com/,,
+http://www.wikidata.org/entity/Q23115239,TENT Rotterdam,Rotterdam,http://www.tentrotterdam.nl,kunstlocatie; tentoonstellingszaal,art location; exhibition hall
+http://www.wikidata.org/entity/Q2312054,Kasteel Duivenvoorde,Voorschoten,https://www.kasteelduivenvoorde.nl/,kasteel,castle
+http://www.wikidata.org/entity/Q2318521,Kinderboekenmuseum,Den Haag,http://www.kinderboekenmuseum.nl,picture book museum,picture book museum
+http://www.wikidata.org/entity/Q2320278,Verwey Museum Haarlem,Haarlem,https://www.museumhaarlem.nl,non-profitorganisatie,Non-profit organisation
+http://www.wikidata.org/entity/Q23212,Evoluon,Eindhoven,https://evoluon.com,evenementenlocatie,event location
+http://www.wikidata.org/entity/Q2323541,Watersnoodmuseum,Schouwen-Duiveland,http://www.watersnoodmuseum.nl/,,
+http://www.wikidata.org/entity/Q2324013,"Ottoburch, museum Rijswijk",Rijswijk,http://www.museumrijswijk.nl,buitenplaats,courtyard
+http://www.wikidata.org/entity/Q23307602,Historische verzameling Grondgebonden Luchtverdediging,Venray,http://www.hcglvd.nl/,,
+http://www.wikidata.org/entity/Q2333459,De Crypte,Gennep,https://www.museumdecrypte.nl/,,
+http://www.wikidata.org/entity/Q2334800,Libertum,Gouda,https://www.libertum.nl/,voormalig museum,former museum
+http://www.wikidata.org/entity/Q2335767,Zijper Oudheidskamer,Schagen,https://www.zijpermuseum.nl/,,
+http://www.wikidata.org/entity/Q23377378,Toon Kortooms Park,Deurne,http://www.toonkortoomspark.nl/,park,park
+http://www.wikidata.org/entity/Q2341928,Haags Bus Museum,Den Haag,http://www.haagsbusmuseum.nl/,,
+http://www.wikidata.org/entity/Q2342262,Museum Jan Cunen,Oss,http://www.museumjancunen.nl/,,
+http://www.wikidata.org/entity/Q23437720,Museum Wierdenland,Winsum,https://www.wierdenland.nl/,,
+http://www.wikidata.org/entity/Q2345721,Hannemahuis,Harlingen,https://www.hannemahuis.nl/,,
+http://www.wikidata.org/entity/Q2355780,Fotomuseum Hilversum,Hilversum,http://www.museumhilversum.nl,,
+http://www.wikidata.org/entity/Q2356434,Museum Maluku,Den Haag,http://www.museum-maluku.nl/,,
+http://www.wikidata.org/entity/Q2361897,Museum Warsenhoeck,Nieuwegein,https://www.museumwarsenhoeck.nl,,
+http://www.wikidata.org/entity/Q2363643,Museum Valse Kunst,Westerveld,http://www.museums-vledder.nl/,,
+http://www.wikidata.org/entity/Q2365901,Grenslandmuseum,Aalten,https://www.grenslandmuseum.nl,,
+http://www.wikidata.org/entity/Q2369728,NZH-Vervoermuseum,Haarlem,https://www.nzh-vervoermuseum.nl/,,
+http://www.wikidata.org/entity/Q2370540,Collectie Six,Amsterdam,http://nl.collectiesix.nl/,kunstverzameling,Art collection
+http://www.wikidata.org/entity/Q2375610,Speelgoedmuseum ‘op Stelten’,Oosterhout,http://www.speelgoedmuseum.nl/,,
+http://www.wikidata.org/entity/Q2382575,Westfries Museum,Hoorn,http://www.wfm.nl,,
+http://www.wikidata.org/entity/Q2383603,Nederlands Uitvaart Museum Tot Zover,Amsterdam,http://www.totzover.nl; https://www.totzover.nl/,,
+http://www.wikidata.org/entity/Q2388491,Museum Palthehuis,Oldenzaal,http://www.palthehuis.nl,,
+http://www.wikidata.org/entity/Q23900557,Stadhuismuseum Zierikzee,Zierikzee,http://www.stadhuismuseum.nl/,,
+http://www.wikidata.org/entity/Q23900561,Museum Spakenburg,Bunschoten,http://www.museumspakenburg.nl,,
+http://www.wikidata.org/entity/Q23930568,Museum MORE,Lochem,https://www.museummore.nl; https://www.museummore.nl/en,,
+http://www.wikidata.org/entity/Q23993493,Erfgoedcentrum Rozet,Arnhem,https://www.erfgoedcentrumrozet.nl/,,
+http://www.wikidata.org/entity/Q24033642,Nationaal Monument Kamp Vught,Vught,http://www.nmkampvught.nl/,oorlogsmonument,war monument
+http://www.wikidata.org/entity/Q2412016,Natuurhistorisch Museum Maastricht,Maastricht,http://www.nhmmaastricht.nl/; https://nhmmaastricht.nl,,
+http://www.wikidata.org/entity/Q2417946,Historisch Museum Deventer,Deventer,http://www.historischmuseumdeventer.nl/,,
+http://www.wikidata.org/entity/Q2423105,Meierijsche Museumboerderij,Bernheze,https://www.museumboerderij.nl/,,
+http://www.wikidata.org/entity/Q2425770,Huis Van Gijn,Dordrecht,https://www.huisvangijn.nl/,,
+http://www.wikidata.org/entity/Q2436387,Museum de Fundatie,Zwolle,http://www.museumdefundatie.nl/,,
+http://www.wikidata.org/entity/Q2442464,Museum Lambert van Meerten,Delft,https://www.museumhuizen.nl/en/huis-van-meerten,,
+http://www.wikidata.org/entity/Q2445274,Steenkolenmijn Valkenburg,Valkenburg aan de Geul,https://www.steenkolenmijn.nl/de/; https://www.steenkolenmijn.nl/en/; https://www.steenkolenmijn.nl/nl/,mijnbouwmuseum; toonmijn,Mining Museum; Show Mine
+http://www.wikidata.org/entity/Q2447114,Kollumer Museum Mr. Andreae,Kollum,https://www.kollumermuseum.nl/,,Regional Museum
+http://www.wikidata.org/entity/Q2447969,Kasteel Ammersoyen,Maasdriel,http://www.kasteel-ammersoyen.nl/,burcht; kasteel,castle; castle
+http://www.wikidata.org/entity/Q2459642,Weverijmuseum Geldrop,Geldrop-Mierlo,http://www.weverijmuseum.nl/,,
+http://www.wikidata.org/entity/Q2468128,Hortus botanicus Leiden,Leiden,http://www.hortus.leidenuniv.nl/,hortus botanicus,Hortus botanicus
+http://www.wikidata.org/entity/Q2470853,Wereldmuseum Berg en Dal,Berg en Dal,https://bergendal.wereldmuseum.nl/,,
+http://www.wikidata.org/entity/Q24754774,preHistorisch Dorp,Eindhoven,http://www.preHistorischDorp.nl,bouwwerk; openluchtmuseum,building; open-air museum
+http://www.wikidata.org/entity/Q2478628,Frans Hals Museum - Hal,Haarlem,https://www.franshalsmuseum.nl/nl/,dependance,dependance
+http://www.wikidata.org/entity/Q2479295,Volendams Museum,Volendam,http://www.volendamsmuseum.nl,,
+http://www.wikidata.org/entity/Q2479640,Nationaal Rijtuigmuseum,Leek,https://www.museumnienoord.nl/,organisatie,organisation
+http://www.wikidata.org/entity/Q2480545,Museum Vrolik,Amsterdam,https://prev.amc.nl/web/AMC-website/Museum-Vrolik-NL/Museum-Vrolik.html,anatomisch museum,anatomical museum
+http://www.wikidata.org/entity/Q2483022,Museum Tromp's Huys,Vlieland,http://www.trompshuys.nl,,
+http://www.wikidata.org/entity/Q2485044,Biesbosch Museum Werkendam,Altena,http://www.biesboschmuseumeiland.nl,,
+http://www.wikidata.org/entity/Q2491328,Veenkoloniaal Museum,Veendam,https://www.veenkoloniaalmuseum.nl,,
+http://www.wikidata.org/entity/Q2493502,Cavaleriemuseum,Amersfoort,http://www.cavaleriemuseum.nl,militair museum,Military Museum
+http://www.wikidata.org/entity/Q2496473,Openbaar Vervoer & Speelgoed Museum,Doesburg,https://www.ovsm-doesburg.nl,speelgoedmuseum,toy museum
+http://www.wikidata.org/entity/Q2514360,Museum Jan,Amstelveen,http://www.jvdtogt.nl,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q2519854,Vechtstreekmuseum,Maarssen,http://www.vechtstreekmuseum.nl,,
+http://www.wikidata.org/entity/Q2530116,Gorcums Museum,Gorinchem,https://www.gorcumsmuseum.nl/,,
+http://www.wikidata.org/entity/Q2530385,Mariniersmuseum,Rotterdam,http://www.mariniersmuseum.nl,,
+http://www.wikidata.org/entity/Q2530771,Kazemattenmuseum,Kornwerderzand,http://www.kazemattenmuseum.nl,,
+http://www.wikidata.org/entity/Q2533298,Max Euwe Centrum,Amsterdam,https://maxeuwe.nl,bouwwerk,construction
+http://www.wikidata.org/entity/Q2534195,Stedelijk Museum,Kampen,http://www.stedelijkemuseakampen.nl,,
+http://www.wikidata.org/entity/Q2534749,"Missiemuseum, Steyl",Venlo,https://www.missiemuseum.nl,kloostercomplex,Monastery complex
+http://www.wikidata.org/entity/Q2538283,Museum W,Weert,https://www.museumw.nl,,
+http://www.wikidata.org/entity/Q2538533,Stoomgemaal Winschoten,Oldambt,http://stoomgemaalwinschoten.nl,pompgemaal; stoomgemaal,pumping meal; steam pumping meal
+http://www.wikidata.org/entity/Q2539475,Stadskasteel Zaltbommel,Zaltbommel,http://stadskasteelzaltbommel.nl,,
+http://www.wikidata.org/entity/Q2546552,De Casteelse Poort,Wageningen,https://www.casteelsepoort.nl/,,
+http://www.wikidata.org/entity/Q2552619,Waterlandsmuseum de Speeltoren,Monnickendam,http://www.despeeltoren.nl/,,
+http://www.wikidata.org/entity/Q255409,De Mesdag Collectie,Den Haag,http://www.demesdagcollectie.nl,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q2561174,Museum of the Image,Breda,http://www.motimuseum.nl,,
+http://www.wikidata.org/entity/Q25616652,Klompenmuseum Scherjon & Fierljepmuseum,Tietjerksteradeel,https://www.klompen.frl/,,
+http://www.wikidata.org/entity/Q25658642,Skûtsjemuseum de Stripe,Tietjerksteradeel,http://www.skutsjemuseum.nl/,,
+http://www.wikidata.org/entity/Q2574390,Het Grachtenhuis,Amsterdam,http://www.hetgrachtenhuis.nl,,
+http://www.wikidata.org/entity/Q2575273,Nationaal Bus Museum,Hoogezand-Sappemeer,https://www.nationaalbusmuseum.nl,,
+http://www.wikidata.org/entity/Q2584307,Centrum voor Natuur en Landschap,Terschelling,http://www.natuurmuseumterschelling.nl/,publiek aquarium; zeeaquarium,public aquarium; sea aquarium
+http://www.wikidata.org/entity/Q2592729,Arboretum Poort-Bulten,Losser,https://www.natuurmonumenten.nl/natuurgebieden/arboretum-poort-bulten,arboretum,arboretum
+http://www.wikidata.org/entity/Q2593585,Molenmuseum,Zaanstad,http://www.zaanschemolen.nl,,
+http://www.wikidata.org/entity/Q260913,Centraal Museum,Utrecht,https://www.centraalmuseum.nl/,,
+http://www.wikidata.org/entity/Q26158654,Leudalmuseum,Leudal,https://www.leudalmuseum.nl/,,
+http://www.wikidata.org/entity/Q2621837,Waag (Oudewater),Oudewater,http://www.heksenwaag.nl,waag,venture
+http://www.wikidata.org/entity/Q2623452,Schoenenkwartier,Waalwijk,http://museumpluswaalwijk.nl/,,
+http://www.wikidata.org/entity/Q2640806,Museum Tongerlohuys,Roosendaal,https://www.tongerlohuys.nl/,,
+http://www.wikidata.org/entity/Q26411393,Gemeentemuseum Het Land van Thorn,Maasgouw,https://www.museumthorn.com/nl/home,,
+http://www.wikidata.org/entity/Q2643296,Terra Maris,Oostkapelle,http://www.terramaris.nl,,
+http://www.wikidata.org/entity/Q2653692,Louis Couperus Museum,Den Haag,https://www.couperusmuseum.org/,,
+http://www.wikidata.org/entity/Q2654416,Nationaal Onderwijsmuseum,Rotterdam,http://www.onderwijsmuseum.nl,,
+http://www.wikidata.org/entity/Q2654815,Anton Pieck Museum,Hattem,http://www.antonpieckmuseum.nl,,
+http://www.wikidata.org/entity/Q2655184,Veenpark,Emmen,http://www.veenpark.nl/,,
+http://www.wikidata.org/entity/Q2663362,Museum it Tsiispakhus,Wommels,https://www.tsiispakhus.nl/,,house
+http://www.wikidata.org/entity/Q2675491,Bierreclame Museum,Breda,http://www.bierreclamemuseum.nl,,
+http://www.wikidata.org/entity/Q2675643,Museum Paulina Bisdom van Vliet,Krimpenerwaard,https://bisdomvanvliet.nl/,,
+http://www.wikidata.org/entity/Q2679819,Hunebedcentrum,Borger,http://www.hunebedcentrum.eu/,,
+http://www.wikidata.org/entity/Q26822174,Nationaal Holocaust Museum,Amsterdam,https://jck.nl/en/location/national-holocaust-museum; https://jck.nl/locatie/nationaal-holocaustmuseum,Holocaustmuseum,Holocaust Museum
+http://www.wikidata.org/entity/Q26832671,Moco Museum,Amsterdam,http://www.mocomuseum.com/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q2683308,Natuurcentrum Ameland,Ameland,http://www.natuurcentrumameland.nl/,filmtheater; publiek aquarium; zeeaquarium,film theatre; public aquarium; sea aquarium
+http://www.wikidata.org/entity/Q2692012,Nederlands Watermuseum,Arnhem,http://www.watermuseum.nl,,
+http://www.wikidata.org/entity/Q2693553,Huis Zypendaal,Arnhem,http://www.glk.nl/82/locatie/?locatie=14,landhuis,country house
+http://www.wikidata.org/entity/Q2694318,Nederlands Pluimveemuseum,Barneveld,https://www.pluimveemuseum.nl,,
+http://www.wikidata.org/entity/Q2695526,A.M. de Jong-museum,Steenbergen,http://www.amdejongmuseum.nl/,,
+http://www.wikidata.org/entity/Q2710899,Nationaal Onderduikmuseum,Aalten,https://nationaalonderduikmuseum.nl,,
+http://www.wikidata.org/entity/Q2725746,Hollands Kaasmuseum,Alkmaar,http://www.kaasmuseum.nl/,,
+http://www.wikidata.org/entity/Q2736515,Stedelijk Museum Zutphen,Zutphen,https://museazutphen.nl/stedelijk-museum-zutphen,,
+http://www.wikidata.org/entity/Q2739162,Nationaal Ruimtevaart Museum,Lelystad,http://www.nationaalruimtevaartmuseum.nl/,,
+http://www.wikidata.org/entity/Q2740987,Limburgs Schutterij Museum,Venlo,https://www.schutterijmuseum.nl/,,
+http://www.wikidata.org/entity/Q2761825,Stadsmuseum Leidschendam-Voorburg,Voorburg,http://www.swaensteyn.nl/,,
+http://www.wikidata.org/entity/Q2763574,De Adriaan,Haarlem,https://www.molenadriaan.nl/; https://www.molenadriaan.nl/nl/,stellingmolen; windmolen,Of a cylinder capacity exceeding 1000 cm3 but not exceeding 1000 cm3
+http://www.wikidata.org/entity/Q277316,Rembrandthuis,Amsterdam,https://www.rembrandthuis.nl/nl/,historisch museum; kunstmuseumgebouw; museumhuis,historical museum; art museum building; museum house
+http://www.wikidata.org/entity/Q2776719,De Valk,Leiden,http://www.molenmuseumdevalk.nl/,stellingmolen; windmolen,Of a cylinder capacity exceeding 1000 cm3 but not exceeding 1000 cm3
+http://www.wikidata.org/entity/Q2779535,Stedelijk Museum Schiedam,Schiedam,http://www.stedelijkmuseumschiedam.nl,,
+http://www.wikidata.org/entity/Q2780274,Fort bij Vijfhuizen,Haarlemmermeer,https://www.kunstfort.nl/,fort,fort
+http://www.wikidata.org/entity/Q2782510,Historisch Museum De Bevelanden,Goes,https://www.historischmuseumdebevelanden.nl/index.html,,
+http://www.wikidata.org/entity/Q2783734,Museum Opsterlân,Opsterland,http://www.museumopsterlan.nl/,,
+http://www.wikidata.org/entity/Q2783790,Graafs Museum,Grave,http://www.graafsmuseum.nl,,
+http://www.wikidata.org/entity/Q2786191,Jopie Huisman Museum,Workum,http://www.jopiehuismanmuseum.nl,,art museum
+http://www.wikidata.org/entity/Q2789485,Museum Kennemerland,Beverwijk,https://www.museumkennemerland.nl/,,
+http://www.wikidata.org/entity/Q27915943,Roerstreekmuseum,Roerdalen,http://www.roerstreekmuseum.nl/,streekmuseum,Regional Museum
+http://www.wikidata.org/entity/Q27915944,Streekmuseum Stevensweert/Ohe en Laak,Stevensweert,http://www.eilandindemaas.nl,,
+http://www.wikidata.org/entity/Q27915945,Maas Binnenvaartmuseum,Maasbracht,https://maas-binnenvaartmuseum.nl/,,maritime museum
+http://www.wikidata.org/entity/Q2793692,Villa Zebra,Rotterdam,http://www.villazebra.nl,,
+http://www.wikidata.org/entity/Q2794022,Van Eesteren Museum,Amsterdam,https://vaneesterenmuseum.nl,,
+http://www.wikidata.org/entity/Q27949674,Museum Klok en Peel,Asten,http://www.museumklokenpeel.nl/,,
+http://www.wikidata.org/entity/Q2798268,Limburgs Museum,Venlo,https://www.limburgsmuseum.nl/,,
+http://www.wikidata.org/entity/Q2805178,Galerij Prins Willem V,Den Haag,https://www.mauritshuis.nl/nu-te-doen/vaste-collectie/galerij-prins-willem-v/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q28058453,mij | museum ijsselstein,IJsselstein,http://www.museumijsselstein.nl,,
+http://www.wikidata.org/entity/Q28145622,G. Perlee Draaiorgelmuseum,Amsterdam,http://www.gperlee.com/,muziekmuseum,music museum
+http://www.wikidata.org/entity/Q28147228,Stedelijk Museum Breda,Breda,http://stedelijkmuseumbreda.nl/,,
+http://www.wikidata.org/entity/Q28151214,Beatles Museum,Alkmaar,http://beatlesmuseum.nl/,,
+http://www.wikidata.org/entity/Q28151370,Nationaal Orgelmuseum,Elburg,https://www.nationaalorgelmuseum.nl,muziekinstrumentenmuseum,musical instruments museum
+http://www.wikidata.org/entity/Q28154714,Polderhuis,Veere,https://www.polderhuiswestkapelle.nl,,
+http://www.wikidata.org/entity/Q281903,Museum Prinsenhof Delft,Delft,http://prinsenhof-delft.nl,,
+http://www.wikidata.org/entity/Q28321482,Museum Dansant,Hilvarenbeek,http://www.museumdansant.nl/,muziekinstrumentenmuseum,musical instruments museum
+http://www.wikidata.org/entity/Q28465538,Kessels Museum,Tilburg,https://www.kesselsmuseum.nl/,muziekinstrumentenmuseum,musical instruments museum
+http://www.wikidata.org/entity/Q28465541,Jukeboxen Museum,Meierijstad,https://www.jukeboxen.nl/,,
+http://www.wikidata.org/entity/Q28465548,Museum Musica,Stadskanaal,http://www.museum-musica.nl/,muziekinstrumentenmuseum,musical instruments museum
+http://www.wikidata.org/entity/Q2857579,Museum 1940-1945,Dordrecht,http://www.museum19401945.nl/,,
+http://www.wikidata.org/entity/Q28735854,Streekmuseum Elsloo,Elsloo,http://www.streekmuseumelsloo.nl,streekmuseum,Regional Museum
+http://www.wikidata.org/entity/Q28737188,Elsmuseum,Beek,http://www.elsmuseum.nl/,,
+http://www.wikidata.org/entity/Q2874177,Dordrechts Museum,Dordrecht,http://www.dordrechtsmuseum.nl/,,
+http://www.wikidata.org/entity/Q2882945,GRID Grafisch Museum Groningen,Groningen,http://www.gridgroningen.nl,,
+http://www.wikidata.org/entity/Q28854754,Academisch Historisch Museum,Leiden,http://www.historie.leidenuniv.nl/historisch-museum/,,
+http://www.wikidata.org/entity/Q2885637,Tabaks Historisch Museum,Delft,https://www.tabaksmuseum.nl/,,
+http://www.wikidata.org/entity/Q28920136,Klederdracht Museum Amsterdam,Amsterdam,http://hetklederdrachtmuseum.nl/,modemuseum,fashion museum
+http://www.wikidata.org/entity/Q28956940,Museum Oud Amelisweerd,Bunnik,http://www.moa.nl/,,
+http://www.wikidata.org/entity/Q2916386,KattenKabinet,Amsterdam,http://www.kattenkabinet.nl/,woonhuis,house
+http://www.wikidata.org/entity/Q2919762,Bijbels Museum,Amsterdam,http://www.bijbelsmuseum.nl/,non-profitorganisatie,Non-profit organisation
+http://www.wikidata.org/entity/Q2984779,Museum Oud-Oosterhout,Oosterhout,http://www.museumoudoosterhout.nl,,
+http://www.wikidata.org/entity/Q29908492,Museum Flehite,Amersfoort,https://museumflehite.nl; https://museumflehite.nl/en/home/,,
+http://www.wikidata.org/entity/Q29944161,Touwmuseum,Oudewater,http://www.touwmuseum.nl,,
+http://www.wikidata.org/entity/Q30163006,Drukkunstmuseum,Maastricht,https://kapelvanverbeelding.nl/,,
+http://www.wikidata.org/entity/Q3049198,Waalres Museum,Waalre,http://www.hetwaalresmuseum.nl; http://www.hetwaalresmuseum.nl/,,
+http://www.wikidata.org/entity/Q3112892,Haags Openbaar Vervoer Museum,Den Haag,http://hovm.nl,complex van meerdere objecten; trammuseum,complex of multiple objects; trammuseum
+http://www.wikidata.org/entity/Q31435560,UvA Computermuseum,Amsterdam,http://ub.fnwi.uva.nl/computermuseum; http://www.uva.nl/faculteiten/faculteit-der-natuurwetenschappen-wiskunde-en-informatica/locatie-en-contact/campus/computermuseum/uva-computermuseum.html,computermuseum,computer museum
+http://www.wikidata.org/entity/Q3192854,Museum Vlaardingen,Vlaardingen,http://www.museumvlaardingen.nl,,
+http://www.wikidata.org/entity/Q3205907,Museumstoomtram Hoorn - Medemblik,Hoorn,http://www.museumstoomtram.nl,toeristische spoorweg,tourist railway
+http://www.wikidata.org/entity/Q3275333,Madame Tussauds Amsterdam,Amsterdam,http://www.madametussauds.com/amsterdam/,toeristische bestemming; wassenbeeldenmuseum,tourist destination; wax sculpture museum
+http://www.wikidata.org/entity/Q3283407,Boomkwekerijmuseum,Boskoop,http://www.boomkwekerijmuseum.nl/,,
+http://www.wikidata.org/entity/Q3291639,Museum Jan Heestershuis,Meierijstad,http://www.museumjanheestershuis.nl,herenhuis,mansion
+http://www.wikidata.org/entity/Q33038080,Museum Arnemuiden,Middelburg,http://www.museumarnemuiden.nl,,
+http://www.wikidata.org/entity/Q3311591,Natuurhistorisch Museum Rotterdam,Rotterdam,http://www.hetnatuurhistorisch.nl; http://www.hetnatuurhistorisch.nl/,,
+http://www.wikidata.org/entity/Q3348276,Nationaal Modelspoor Museum,Sneek,http://www.modelspoormuseum.nl,,
+http://www.wikidata.org/entity/Q3371370,Nationaal Militair Museum,Soest,http://www.nmm.nl/,,
+http://www.wikidata.org/entity/Q3377562,Fotomuseum Den Haag,Den Haag,http://www.fotomuseumdenhaag.nl,fotomuseum,photomuseum
+http://www.wikidata.org/entity/Q3383883,Zaans Museum,Zaanstad,http://www.zaansmuseum.nl/index.php?id=52,,
+http://www.wikidata.org/entity/Q3389883,Mondriaanhuis,Amersfoort,https://www.mondriaanhuis.nl/de/; https://www.mondriaanhuis.nl/en/; https://www.mondriaanhuis.nl/nl/,kerkgebouw; kunstmuseumgebouw; school; woonhuis,church building; art museum building; school; house
+http://www.wikidata.org/entity/Q3457274,Museum Drachten,Smallingerland,https://museumdrachten.nl/,,
+http://www.wikidata.org/entity/Q3464842,Fogelsangh State,Kollumerland en Nieuwkruisland,https://www.fogelsangh-state.nl/,landgoed; park,estate; park
+http://www.wikidata.org/entity/Q3483633,De Wieger,Deurne,http://www.dewieger.nl,,
+http://www.wikidata.org/entity/Q3531625,Oyfo Techniekmuseum,Hengelo,http://www.oyfo.nl/; http://www.oyfo.nl/techniekmuseum,,
+http://www.wikidata.org/entity/Q372829,Geelvinck Hinlopen Huis,Amsterdam,http://www.geelvinckhinlopenhuis.nl/,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q3783595,Hash Marihuana & Hemp Museum,Amsterdam,http://www.hashmuseum.com/,cannabis museum,cannabis museum
+http://www.wikidata.org/entity/Q38079006,Geelvinck Muziek Museum,Zutphen,https://geelvinck.nl,muziekmuseum,music museum
+http://www.wikidata.org/entity/Q3903665,Purmerends Museum,Purmerend,http://www.purmerendsmuseum.nl,,
+http://www.wikidata.org/entity/Q3909572,Museum de Schilpen,Midden-Delfland,https://www.schilpen.nl/,,
+http://www.wikidata.org/entity/Q3983070,Natura Docet,Denekamp,http://www.wonderryck.nl,,
+http://www.wikidata.org/entity/Q3983824,TextielMuseum,Tilburg,http://www.textielmuseum.nl,,
+http://www.wikidata.org/entity/Q40304752,Museum De Waag,Deventer,http://museumdewaag.nl/,,
+http://www.wikidata.org/entity/Q408081,Airborne Museum,Renkum,https://www.airbornemuseum.nl; https://www.airbornemuseum.nl/en,militair museum,Military Museum
+http://www.wikidata.org/entity/Q41574019,Electric Ladyland,Amsterdam,http://www.electric-lady-land.com/,,
+http://www.wikidata.org/entity/Q41990282,Museum Vaals,Vaals,http://www.museumvaals.nl/,,
+http://www.wikidata.org/entity/Q42298583,Historisch museum,Maasdriel,https://www.historischmuseumhedel.nl/,,
+http://www.wikidata.org/entity/Q4288330,Museum Veere,Veere,http://www.museumveere.nl,,
+http://www.wikidata.org/entity/Q4295172,Zouavenmuseum,Oudenbosch,http://www.zouavenmuseum.nl,,
+http://www.wikidata.org/entity/Q431431,Singer Laren,Laren,http://www.singerlaren.nl/,,
+http://www.wikidata.org/entity/Q4322946,Kasteel Hernen,Wijchen,http://www.glk.nl/hernen,kasteel,castle
+http://www.wikidata.org/entity/Q4343810,Limburgs Openluchtmuseum Eynderhoof,Nederweert-Eind,http://www.eynderhoof.nl; https://eynderhoof.nl/,,
+http://www.wikidata.org/entity/Q4355618,Historisch Museum Haarlemmermeer,Haarlemmermeer,https://www.haarlemmermeermuseum.nl/en/historical-museum-haarlemmermeer; https://www.haarlemmermeermuseum.nl/historisch-museum,,
+http://www.wikidata.org/entity/Q4356904,Nederlands Artillerie Museum,Elburg,http://www.nederlandsartilleriemuseum.nl,,
+http://www.wikidata.org/entity/Q4360916,Museum Gouda,Gouda,http://www.museumgouda.nl/,,
+http://www.wikidata.org/entity/Q43655709,Aartsbisschoppelijk Museum,Utrecht,http://www.aartsbisschoppelijkmuseum.nl/,,
+http://www.wikidata.org/entity/Q4400690,De Looierij,Dongen,http://www.delooierij.nl,,
+http://www.wikidata.org/entity/Q4434463,Gelders Smalspoormuseum,Gelderland,https://www.smalspoor.nl/,spoorwegmuseum,Railway Museum
+http://www.wikidata.org/entity/Q4452129,Stoomgemaal Vier Noorder Koggen,Medemblik,http://www.stoommachinemuseum.nl/,pompgemaal; stoomgemaal; wetenschapsmuseum,pumping meal; steam meal; science museum
+http://www.wikidata.org/entity/Q4488641,DAF Museum,Eindhoven,http://www.dafmuseum.nl,,
+http://www.wikidata.org/entity/Q45031161,Nationaal Biermuseum De Boom,Alkmaar,http://www.biermuseum.nl/,,
+http://www.wikidata.org/entity/Q45204324,Nederlands IJzermuseum,Oude IJsselstreek,http://www.nederlandsijzermuseum.nl,,
+http://www.wikidata.org/entity/Q4540226,BroekerVeiling,Langedijk,https://broekerveiling.nl/,veiling,auction
+http://www.wikidata.org/entity/Q4623539,Stedelijk Museum Alkmaar,Alkmaar,http://stedelijkmuseumalkmaar.nl/,,
+http://www.wikidata.org/entity/Q46304218,Loosduins Museum,Den Haag,https://www.loosduinsmuseum.nl/,,
+http://www.wikidata.org/entity/Q4688292,Gelders Geologisch Museum,Velp Gelders,https://geologischmuseum.nl/,,geological museum
+http://www.wikidata.org/entity/Q46919682,Dutch Pinball Museum,Rotterdam,http://www.dutchpinballmuseum.com/,arcadehal,arcade hall
+http://www.wikidata.org/entity/Q474563,Teylers Museum,Haarlem,http://www.teylersmuseum.nl,kunstmuseumgebouw; natuurmuseum; wetenschapsmuseum,art museum building; nature museum; science museum
+http://www.wikidata.org/entity/Q47472405,Cromhouthuis,Amsterdam,https://www.cromhouthuis.nl/,,
+http://www.wikidata.org/entity/Q47472417,Museum Nijkerk,Nijkerk,http://www.museumnijkerk.nl,,
+http://www.wikidata.org/entity/Q477275,Beelden aan Zee,Scheveningen,http://www.beeldenaanzee.nl,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q4785912,Archeologisch Museum Haarlem,Haarlem,https://www.archeologischmuseumhaarlem.nl/,archeologiemuseum,Archaeology Museum
+http://www.wikidata.org/entity/Q484899,Nationaal Fietsmuseum Velorama,Nijmegen,https://velorama.nl,bicycle museum,bicycle museum
+http://www.wikidata.org/entity/Q4928268,De Oude Bakkerij,Medemblik,http://www.deoudebakkerij.com,,
+http://www.wikidata.org/entity/Q493160,Museum Ons' Lieve Heer op Solder,Amsterdam,https://opsolder.nl/museum/,kerkgebouw,church building
+http://www.wikidata.org/entity/Q4989654,Kasteel Huize Ruurlo,Berkelland,https://www.museummore-kasteelruurlo.nl/,burcht; landgoed; woonhuis,Fortress; estate; residential
+http://www.wikidata.org/entity/Q51959637,Drinkwatermuseum,Heemstede,https://www.waternet.nl/ons-water/leren-over-water/drinkwatermuseum/,,
+http://www.wikidata.org/entity/Q5335918,Museum Joure,Joure,http://www.museumjoure.nl,,coffee museum
+http://www.wikidata.org/entity/Q5422840,Foam Fotografiemuseum Amsterdam,Amsterdam,http://www.foam.org/,,
+http://www.wikidata.org/entity/Q5462003,Katwijks Museum,Katwijk,http://www.katwijksmuseum.nl,,
+http://www.wikidata.org/entity/Q54944120,Cube Design Museum,Kerkrade,http://www.cubedesignmuseum.nl,,
+http://www.wikidata.org/entity/Q54957003,Museum Kinderdorp Neerbosch,Nijmegen,http://www.vantlindenhoutmuseum.nl,,
+http://www.wikidata.org/entity/Q55076504,Visserijmuseum,Sluis,http://www.museumbreskens.nl,,
+http://www.wikidata.org/entity/Q55108539,Museum De Bastei,Nijmegen,http://www.debastei.nl; http://www.debastei.nl/de; http://www.debastei.nl/en,,
+http://www.wikidata.org/entity/Q55352177,Museum Abdijkerk,Maasgouw,https://www.abdijkerkthorn.nl/,,
+http://www.wikidata.org/entity/Q5638718,Haghefilm Foundation,Amsterdam,http://www.haghefilmfoundation.org/,cinematheek,cinema library
+http://www.wikidata.org/entity/Q56423939,Musea Zutphen,Zutphen,http://www.museazutphen.nl,,
+http://www.wikidata.org/entity/Q56451691,Gemeentelijk Archeologisch Museum,Sluis,http://www.museumaardenburg.eu/,archeologiemuseum,Archaeology Museum
+http://www.wikidata.org/entity/Q56452159,Veiligheidsmuseum PIT,Almere,http://www.pitveiligheid.nl/,,
+http://www.wikidata.org/entity/Q56452182,Embassy of the Free Mind,Amsterdam,http://www.embassyofthefreemind.com,,
+http://www.wikidata.org/entity/Q56459179,Outsider Art Museum,Amsterdam,https://museumvandegeest.nl/kunst-en-collectie/outsider-art/,,
+http://www.wikidata.org/entity/Q56459326,Museum Het Warenhuis - Axel,Terneuzen,http://www.hetwarenhuis.nl,,
+http://www.wikidata.org/entity/Q56459403,Museum Waelstee,De Waal,https://www.cultuurmuseumtexel.nl/,,
+http://www.wikidata.org/entity/Q56459436,NEST,Den Haag,http://www.nestruimte.nl,,
+http://www.wikidata.org/entity/Q56459461,De Nollen,Den Helder,http://www.projectdenollen.nl,beeldenpark,image park
+http://www.wikidata.org/entity/Q56459483,Lalique Museum,Doesburg,http://www.musee-lalique.nl,kunstmuseum,art museum
+http://www.wikidata.org/entity/Q56459493,Streek & Landbouwmuseum Goemanszorg,Dreischor,http://www.goemanszorg.nl,,
+http://www.wikidata.org/entity/Q56459509,Pieter Vermeulen Museum,IJmuiden,https://www.pietervermeulenmuseum.nl/,,
+http://www.wikidata.org/entity/Q56459526,Edams Museum,Edam-Volendam,http://www.edamsmuseum.nl,,
+http://www.wikidata.org/entity/Q56459550,Kempenmuseum De Acht Zaligheden,Eersel,https://www.achtzaligheden.nl/,,
+http://www.wikidata.org/entity/Q56459565,Museum Egmond,Egmond aan Zee,http://www.museumvanegmond.nl,,regional museum
+http://www.wikidata.org/entity/Q56459575,Museum de Scheper,Eibergen,http://www.museumdescheper.nl,,
+http://www.wikidata.org/entity/Q56459645,Museum Elburg,Elburg,https://www.museumelburg.nl,,
+http://www.wikidata.org/entity/Q56459657,Veluws Museum Hagedoorns Plaatse,Epe,http://www.hagedoornsplaatse.nl,,
+http://www.wikidata.org/entity/Q56459673,Museum Het Pakhuis,Ermelo,http://www.hetpakhuisermelo.nl,,
+http://www.wikidata.org/entity/Q56459685,Museum Giethoorn 't Olde Maat Uus,Giethoorn,http://www.museumgiethoorn.nl,,
+http://www.wikidata.org/entity/Q56459699,Marius van Dokkum Museum,Harderwijk,http://www.mariusvandokkummuseum.nl/,kunstmuseum,art museum
+http://www.wikidata.org/entity/Q56459713,Stadsmuseum Harderwijk,Harderwijk,http://www.stadsmuseum-harderwijk.nl,,
+http://www.wikidata.org/entity/Q56459727,Museum Hoeksche Waard,Heinenoord,http://www.museumhw.nl,,
+http://www.wikidata.org/entity/Q56459741,"Maritiem Centrum ""Abraham Fock""",Ameland,http://www.amelandermusea.nl,,
+http://www.wikidata.org/entity/Q56459789,Westlands Museum,Westland,http://www.westlandsmuseum.nl,,
+http://www.wikidata.org/entity/Q56459860,Haarlemmermeermuseum Historisch Museum,Hoofddorp,http://www.haarlemmermeermuseum.nl,,
+http://www.wikidata.org/entity/Q56460618,Streekmuseum Krimpenerwaard,Krimpen aan den IJssel,https://www.streekmuseumkrimpenerwaard.nl/,,
+http://www.wikidata.org/entity/Q56460642,Museum Nienoord,Leek,http://www.rijtuigmuseum.nl,,
+http://www.wikidata.org/entity/Q56460705,Agrarisch Museum Westerhem,Middenbeemster,http://www.historischgenootschapbeemster.nl,,
+http://www.wikidata.org/entity/Q56460724,Betje Wolff Museum,Middenbeemster,http://www.historischgenootschapbeemster.nl,,
+http://www.wikidata.org/entity/Q56460745,Streekmuseum Veldzicht,Noordwijk,http://www.streekmuseumveldzicht.nl,,
+http://www.wikidata.org/entity/Q56460772,Museum De Vier Quartieren,Oirschot,http://www.museumdevierquartieren.nl,,
+http://www.wikidata.org/entity/Q56460792,Boerderijmuseum ''De Bovenstreek'',Oldebroek,http://www.museumoldebroek.nl,,
+http://www.wikidata.org/entity/Q56460816,Museum de Pelgrim,Oldenzaal,http://www.museumdepelgrim.nl,,
+http://www.wikidata.org/entity/Q56460838,Openluchtmuseum Ootmarsum,Ootmarsum,http://www.openluchtmuseumootmarsum.nl,openluchtmuseum,open-air museum
+http://www.wikidata.org/entity/Q56460860,Museum 'De Tien Malen',Putten,http://www.detienmalen.nl,,
+http://www.wikidata.org/entity/Q56460883,Rijssens Museum,Rijssen,http://www.rijssensmuseum.nl,,
+http://www.wikidata.org/entity/Q56460901,Speelgoedmuseum Kinderwereld Roden,Roden,http://www.museumkinderwereld.nl; https://www.museumkinderwereld.nl/,,
+http://www.wikidata.org/entity/Q56460914,Feyenoord Museum,Rotterdam,http://www.dekuip.nl/rondleidingen,,
+http://www.wikidata.org/entity/Q56460926,Industrieel Museum Zeeland,Terneuzen,http://www.industrieelmuseumzeeland.nl,,
+http://www.wikidata.org/entity/Q56460942,Museummolen Schermerhorn,Schermerhorn,http://www.museummolen.nl,molenmuseum,mill museum
+http://www.wikidata.org/entity/Q56460962,Museum van Brabantse Mutsen en Poffers,Meierijstad,http://www.mutsenmuseum.nl,,
+http://www.wikidata.org/entity/Q56460988,Museum De Domijnen,Sittard-Geleen,http://www.dedomijnen.nl/tentoonstellingen,,
+http://www.wikidata.org/entity/Q56461004,Kermis- en Circusmuseum,Steenwijk,http://www.kermisencircusmuseum.nl,,
+http://www.wikidata.org/entity/Q56461027,Museum Collectie Krop,Steenwijk,http://hildokrop.nl/; https://www.hildokrop.nl/,,
+http://www.wikidata.org/entity/Q56461052,Valkerij en Sigarenmakerij Museum,Valkenswaard,http://www.vsmm.nl,,
+http://www.wikidata.org/entity/Q56461068,Museum Veenendaal,Veenendaal,http://www.museumveenendaal.nl; https://www.museumveenendaal.nl/,,
+http://www.wikidata.org/entity/Q56461097,Stedelijk Museum Vianen,Vianen,http://www.stedelijkmuseumvianen.nl,,
+http://www.wikidata.org/entity/Q56461113,Museum Zaanse Tijd,Zaanstad,http://www.mnuurwerk.nl,,
+http://www.wikidata.org/entity/Q56461129,Zandvoorts Museum,Zandvoort,http://www.zandvoortsmuseum.nl,gebouw,building
+http://www.wikidata.org/entity/Q56461154,Liemers Museum,Zevenaar,http://www.liemersmuseum.nl; https://liemerskunstwerk.nl/museum/,,
+http://www.wikidata.org/entity/Q56461178,Stadsmuseum Zoetermeer,Zoetermeer,http://www.stadsmuseumzoetermeer.nl,,
+http://www.wikidata.org/entity/Q56461202,Visserijmuseum Zoutkamp,Zoutkamp,http://www.visserijmuseum.com,,
+http://www.wikidata.org/entity/Q56461228,Museum De Wemme,Zuidwolde,https://www.dewemme.nl/,,
+http://www.wikidata.org/entity/Q56461263,Schoonewelle Museum voor Natuur en Ambacht,Zwartsluis,http://www.schoonewelle.nl,,
+http://www.wikidata.org/entity/Q5690801,Heiligenbeeldenmuseum,Vorden,https://www.heiligenbeeldenmuseum.nl/,,
+http://www.wikidata.org/entity/Q572230,Kasteel Hoensbroek,Heerlen,http://www.kasteelhoensbroek.nl/,Commons-galerij; kasteel,Commons Gallery; Castle
+http://www.wikidata.org/entity/Q572269,Kasteel Amerongen,Utrechtse Heuvelrug,https://www.kasteelamerongen.nl/,kasteel,castle
+http://www.wikidata.org/entity/Q574961,Frans Hals Museum,Haarlem,https://www.franshalsmuseum.nl/en/; https://www.franshalsmuseum.nl/nl/,cultureel instituut; kunstmuseum,cultural institute; art museum
+http://www.wikidata.org/entity/Q57592852,Klokkengieterijmuseum Heiligerlee,Oldambt,https://www.museaheiligerlee.nl/index.php?page=klok&sub=klokkengieterij-museum,,
+http://www.wikidata.org/entity/Q57592970,Museum Slag bij Heiligerlee,Oldambt,http://www.museaheiligerlee.nl/,,
+http://www.wikidata.org/entity/Q58179751,Theepottenmuseum,Swartbroek,https://theepottenmuseum.nl/,,
+http://www.wikidata.org/entity/Q5971552,IJmuider Zee- en Havenmuseum,Velsen,http://www.zeehavenmuseum.nl/,scheepvaartmuseum,Maritime Museum
+http://www.wikidata.org/entity/Q597597,Vleeshal Middelburg,Middelburg,http://www.vleeshal.nl,kunstencentrum; kunstmuseum,art centre; art museum
+http://www.wikidata.org/entity/Q601223,Koninklijk Eise Eisinga Planetarium,Waadhoeke,http://www.planetarium-friesland.nl,,
+http://www.wikidata.org/entity/Q6029325,Den Hartogh Ford Museum,Hillegom,https://www.fordmuseum.nl/,,
+http://www.wikidata.org/entity/Q603892,Space Expo,Noordwijk,https://www.space-expo.nl/; https://www.space-expo.nl/en,,
+http://www.wikidata.org/entity/Q61930724,Museum Bronbeek,Arnhem,http://museumbronbeek.nl/,militair museum,Military Museum
+http://www.wikidata.org/entity/Q62088324,Chabot Museum,Rotterdam,https://www.chabotmuseum.nl/; https://www.chabotmuseum.nl/english/,kunstmuseum,art museum
+http://www.wikidata.org/entity/Q62096758,Rob Scholte Museum,Den Helder,http://robscholtemuseum.nl/,kunstmuseumgebouw,art museum
+http://www.wikidata.org/entity/Q623558,Oude Kerk,Amsterdam,https://oudekerk.nl/,kerkgebouw; parochiekerk,church building; parish church
+http://www.wikidata.org/entity/Q62609431,Museum de Schat van Simpelveld,Simpelveld,https://deschatvansimpelveld.nl,,
+http://www.wikidata.org/entity/Q632646,Archeon,Alphen aan den Rijn,http://www.archeon.nl/engels/home.html; https://www.archeon.nl/,archeologiemuseum; themapark,Archaeology Museum; theme park
+http://www.wikidata.org/entity/Q63510059,Streekmuseum de Meestoof,Sint-Annaland,http://www.demeestoof.nl,streekmuseum,Regional Museum
+http://www.wikidata.org/entity/Q639909,Grote of Sint-Laurenskerk,Alkmaar,http://www.grotekerk-alkmaar.nl,kerkgebouw,church building
+http://www.wikidata.org/entity/Q641676,Naturalis Biodiversity Center,Leiden,http://www.naturalis.nl,academische uitgeverij; nationaal museum; natuurmuseum; onderzoeksinstituut; organisatie; overheidsagentschap,academic publishing; national museum; nature museum; research institute; organisation; government agency
+http://www.wikidata.org/entity/Q65028829,Indisch Herinneringscentrum,Den Haag,https://www.indischherinneringscentrum.nl/,onderzoekscentrum,Research centre
+http://www.wikidata.org/entity/Q65094059,Red Light Secrets,Amsterdam,https://www.redlightsecrets.com/,,
+http://www.wikidata.org/entity/Q65782581,Vesting Bourtange,Bourtange,https://www.bourtange.nl/,militair museum,Military Museum
+http://www.wikidata.org/entity/Q66085540,Museum van Zuilen,Utrecht,https://www.museumvanzuilen.nl/museum/,,
+http://www.wikidata.org/entity/Q66085575,Musiom,Amersfoort,https://www.musiom.art/,,
+http://www.wikidata.org/entity/Q66716065,Museum Noordwijk,Noordwijk,https://museumnoordwijk.nl,,
+http://www.wikidata.org/entity/Q66724942,LAM museum,Lisse,https://www.lammuseum.nl,,
+http://www.wikidata.org/entity/Q66764684,Bijlmermuseum,Amsterdam,https://bijlmermuseum.com/,beschermd stadsgezicht,protected cityscape
+http://www.wikidata.org/entity/Q667906,De Cruquius,Cruquius,http://www.museumdecruquius.nl,pompgemaal; stoomgemaal,pumping meal; steam pumping meal
+http://www.wikidata.org/entity/Q66985422,Jan Kruis Museum,Midden-Drenthe,https://jankruismuseum.nl/,,
+http://www.wikidata.org/entity/Q674449,Nederlands Openluchtmuseum,Arnhem,https://www.openluchtmuseum.nl; https://www.openluchtmuseum.nl/?taal=de; https://www.openluchtmuseum.nl/?taal=en,nationaal museum; openluchtmuseum,National Museum; Open Air Museum
+http://www.wikidata.org/entity/Q679527,Museum Boijmans Van Beuningen,Rotterdam,https://www.boijmans.nl/,kunstmuseum,art museum
+http://www.wikidata.org/entity/Q680425,Kasteel Doorwerth,Renkum,http://www.glk.nl/doorwerth,burcht; kasteel,castle; castle
+http://www.wikidata.org/entity/Q702726,Joods Museum,Amsterdam,https://jck.nl/locatie/joods-museum,,
+http://www.wikidata.org/entity/Q71801616,Design Museum Dedel,Den Haag,https://designmuseumdedel.nl/,,
+http://www.wikidata.org/entity/Q71869584,Museum Helmantel,Loppersum,http://www.helmantel.nl/de_weem.html,,
+http://www.wikidata.org/entity/Q7476442,Historisch Museum Ede,Ede,https://www.historischmuseumede.nl,,
+http://www.wikidata.org/entity/Q7476466,Museum 't Behouden Huys,Terschelling,http://www.behouden-huys.nl,,
+http://www.wikidata.org/entity/Q7477577,Museum 't Fiskershuske,Moddergat,http://www.museummoddergat.nl,,
+http://www.wikidata.org/entity/Q75192507,Circusmuseum,Amsterdam,http://circusmuseum.nl,circus museum; virtueel museum,circus museum; virtual museum
+http://www.wikidata.org/entity/Q759169,Rijksmuseum Boerhaave,Leiden,http://www.museumboerhaave.nl,wetenschapsmuseum,Science Museum
+http://www.wikidata.org/entity/Q7605588,Design Museum Den Bosch,'s-Hertogenbosch,http://www.designmuseum.nl,,
+http://www.wikidata.org/entity/Q76885559,Erfgoed 's-Hertogenbosch,'s-Hertogenbosch,https://www.erfgoedshertogenbosch.nl/,erfgoedcentrum,heritage centre
+http://www.wikidata.org/entity/Q7699152,Corrie ten Boomhuis,Haarlem,http://www.corrietenboom.com/,gebouw met klokgevel; horlogewinkel; oorlogsmonument,clock facade building; watch shop; war monument
+http://www.wikidata.org/entity/Q77083792,Streekmuseum Reeuwijk,Bodegraven-Reeuwijk,http://www.streekmuseumreeuwijk.nl/,boerenwoning,Farmhouse
+http://www.wikidata.org/entity/Q7708470,Textile Research Centre,Leiden,https://www.trc-leiden.nl/,algemeen nut beogende instelling; onderzoeksinstituut,public utility institution; research institute
+http://www.wikidata.org/entity/Q78792110,Bunkermuseum Schlei,Schiermonnikoog,https://bunkermuseum.wordpress.com/,,
+http://www.wikidata.org/entity/Q791082,Aviodrome,Lelystad,http://www.aviodrome.nl,luchtvaartmuseum,Aeronautics Museum
+http://www.wikidata.org/entity/Q7921517,Vermeer Centrum Delft,Delft,https://www.vermeerdelft.nl/nl/,,
+http://www.wikidata.org/entity/Q814047,Beeldenpark Een Zee van Staal,Wijk aan Zee,http://eenzeevanstaal.nl/,beeldenpark; beeldhouwersymposium,Sculpture park; sculptor symposium
+http://www.wikidata.org/entity/Q828307,Verzetsmuseum Amsterdam,Amsterdam,http://www.verzetsmuseum.org/,militair museum; nationaal museum,military museum; national museum
+http://www.wikidata.org/entity/Q847166,Spoorwegmuseum,Utrecht,http://www.spoorwegmuseum.nl,nationaal museum; spoorwegmuseum,National Museum; Railway Museum
+http://www.wikidata.org/entity/Q848290,Sint-Janskerk,Gouda,http://www.sintjan.com,kerkgebouw,church building
+http://www.wikidata.org/entity/Q848313,Fries Museum,Leeuwarden,https://www.friesmuseum.nl; https://www.friesmuseum.nl/de/; https://www.friesmuseum.nl/en/; https://www.friesmuseum.nl/fr/,,
+http://www.wikidata.org/entity/Q89269851,Brouws Museum,Schouwen-Duiveland,https://brouwsmuseum.nl/,,
+http://www.wikidata.org/entity/Q892727,Bonnefantenmuseum,Maastricht,http://www.bonnefanten.nl/de; http://www.bonnefanten.nl/en/; https://www.bonnefanten.nl/en/; https://www.bonnefanten.nl/nl/fr,kunstmuseumgebouw,art museum building
+http://www.wikidata.org/entity/Q914231,Rietveld Schroderhuis,Utrecht,https://www.rietveldschroderhuis.nl/; https://www.rietveldschroderhuis.nl/de/; https://www.rietveldschroderhuis.nl/en/,eengezinswoning; museumhuis,single-family house; museum house
+http://www.wikidata.org/entity/Q924335,Stedelijk Museum Amsterdam,Amsterdam,https://www.stedelijk.nl/,kunstmuseum,art museum
+http://www.wikidata.org/entity/Q924769,Fort aan het Pampus,Muiden,http://www.pampus.nl,eiland; fort; kunstmatig eiland; maritieme fortificatie,island; fort; artificial island; maritime fortification
+http://www.wikidata.org/entity/Q931838,Internationale Politiepetten Collectie,Slochteren,http://www.politiepetten.nl/,,
+http://www.wikidata.org/entity/Q93466,CORPUS,Oegstgeest,http://www.corpusexperience.nl/,,
+http://www.wikidata.org/entity/Q9392200,Museum Het Zwanenbroedershuis,'s-Hertogenbosch,http://www.zwanenbroedershuis.nl/,,
+http://www.wikidata.org/entity/Q942892,Stoomtrein Goes - Borsele,Goes,https://www.destoomtrein.nl/,spoorlijn; toeristische spoorweg,railway line; tourist railway
+http://www.wikidata.org/entity/Q96097704,Klompenmuseum De Zaanse Schans,Zaanstad,http://www.woodenshoes.nl/,,
+http://www.wikidata.org/entity/Q96195487,Bizarium,Sluis,https://bizarium.com/,,
+http://www.wikidata.org/entity/Q963825,Von Gimborn Arboretum,Doorn,https://www.bomenmuseum.nl/,arboretum; hortus botanicus,Arboretum; Hortus botanicus
+http://www.wikidata.org/entity/Q96742350,Stadsmuseum Hof van Hessen,Lingewaard,https://huessen.nl/index.php/museum,,
+http://www.wikidata.org/entity/Q97323422,Honig Breethuis,Zaanstad,https://www.honigbreethuis.nl/,,
+http://www.wikidata.org/entity/Q97732161,KathedraalMuseum,Haarlem,https://www.koepelkathedraal.nl/wat-is-er-te-zien/kathedraalmuseum/,,
+http://www.wikidata.org/entity/Q97762828,Museum De Dorpsdokter,Hilvarenbeek,https://www.museumdedorpsdokter.nl/,,
+http://www.wikidata.org/entity/Q97961873,Kaasmuseum Bodegraven,Bodegraven-Reeuwijk,http://www.kaasmuseum.org/,,
+http://www.wikidata.org/entity/Q98893859,Museum Korps Rijdende Artillerie,Elburg,https://www.korpsrijdendeartillerie.nl,,
+http://www.wikidata.org/entity/Q98893862,Museum STAAL,Lochem,https://www.museumstaal.nl,,
+http://www.wikidata.org/entity/Q98893866,Museum Tweestromenland,West Maas en Waal,https://.museumtweestromenland.nl,,
+http://www.wikidata.org/entity/Q98893871,Museum Buren en Oranje,Buren,https://museumburenenoranje.nl/,,
+http://www.wikidata.org/entity/Q98893873,Streekmuseum De Roode Tooren,Doesburg,https://www.deroodetooren.nl/,,
+http://www.wikidata.org/entity/Q98893882,Zilvermuseum Doesburg,Doesburg,https://zilvermuseumdoesburg.nl/,,
+http://www.wikidata.org/entity/Q98893885,Museum Veluwezoom,Renkum,https://www.museumveluwezoom.nl/,,
+http://www.wikidata.org/entity/Q98893890,Stadsmuseum Groenlo,Oost Gelre,https://www.stadsmuseumgroenlo.nl/,,
+http://www.wikidata.org/entity/Q98893894,Ateliermuseum Jac Maris,Heumen,https://www.marishuis.nl/,,
+http://www.wikidata.org/entity/Q98893896,Museum voor Anatomie en Pathologie,Nijmegen,https://www.umcn.nl/museum,,
+http://www.wikidata.org/entity/Q98893914,Museum Smedekinck,Bronckhorst,https://.museumsmedekinck.nl,,
+http://www.wikidata.org/entity/Q98894989,Stadsmuseum Bergh,Montferland,https://stadsmuseumbergh.nl,,
+http://www.wikidata.org/entity/Q98907719,Museum Lunteren,Ede,https://museumlunteren.nl/,,
+http://www.wikidata.org/entity/Q98907722,Gelders Schuttersmuseum,Montferland,https://.schuttersnet.nl,,
+http://www.wikidata.org/entity/Q98908556,Museum Slot Loevestein,Zaltbommel,http://www.slotloevestein.nl/,militair museum; nationaal museum,military museum; national museum
+http://www.wikidata.org/entity/Q98952031,Nationaal Monument Oranjehotel,Den Haag,https://www.oranjehotel.org/,erfgoedinstelling,Heritage institution
+http://www.wikidata.org/entity/Q98959190,Museum Kasteel Wijchen,Wijchen,https://www.museumwijchen.nl/,,
+http://www.wikidata.org/entity/Q98961921,Museum Sjoel Elburg,Elburg,http://www.sjoelelburg.nl,,
+http://www.wikidata.org/entity/Q98962037,Elisabeth Weeshuis Museum,Culemborg,https://weeshuismuseum.nl/,historisch museum,historical museum
+http://www.wikidata.org/entity/Q99346033,Museum De Tuut,West Maas en Waal,https://www.stoomgemaaldetuut.nl/,,
+http://www.wikidata.org/entity/Q99346823,CODA Museum,Apeldoorn,https://www.coda-apeldoorn.nl/nl/english; https://www.coda-apeldoorn.nl/nl/museum,,
+http://www.wikidata.org/entity/Q99349995,Nationaal Museum Paleis het Loo,Apeldoorn,http://www.paleishetloo.nl/,nationaal museum,National Museum
+http://www.wikidata.org/entity/Q99370641,museum Huis Bergh,'s-Heerenberg,https://huisbergh.nl/,,
+http://www.wikidata.org/entity/Q99622726,Drenkelingenhuisje,Vlieland,https://www.vliehors-expres.nl/reddinghuisje/,erfgoedobject,heritage object
