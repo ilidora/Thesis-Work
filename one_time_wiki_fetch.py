@@ -1,4 +1,7 @@
-
+#This script fetches Dutch museums from Wikidata using a SPARQL query, 
+# processes the results into a DataFrame, and saves it as a CSV file. 
+# It includes error handling and respects Wikidata's usage guidelines 
+# by setting an appropriate User-Agent header.
 
 import requests
 import pandas as pd

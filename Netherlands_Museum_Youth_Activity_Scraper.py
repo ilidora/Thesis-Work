@@ -1,6 +1,19 @@
-# The key .py file to run for crawling museum websites and extracting youth/family activity info.
-# It uses the cached list of Dutch museums from Wikidata (created by fetch script) 
-# and applies heuristics to find relevant pages and extract info (see nl_museums_wikidata.csv).
+# Scraper for Dutch museums - final version 2024-06-03
+# Credits: Based on earlier versions by Daria Ilina, with the use of UvA AI Chat, 
+# with inspiration from PyLadies Amsterdam Scrapy workshop (https://github.com/pyladiesams/scalable-data-harvesting-for-ai-may2026).
+
+#This script assumes you have a cleaned CSV file of Dutch museums from Wikidata, fully in English, with columns like:
+# - museum_name
+# - city
+# - website
+# - museum_type_en (a rough category label in English, if available)
+
+# The script will:
+# 1. Load the museum list from the cleaned CSV.
+# 2. Randomly sample museums to crawl (to avoid overloading and for manageability).
+# 3. For each museum, fetch the homepage, find candidate links related to youth/family activities, and extract heuristic information about those pages.
+# 4. Save the results to a new CSV file with a unique name.
+
 
 import requests
 import random
@@ -36,18 +49,6 @@ YOUTH_KEYWORDS = [
     "onderwijs", "scholen", "educatie", "familie", "gezinnen", "kinderen",
     "jeugd", "jongeren", "basisschool", "voortgezet onderwijs", "schoolbezoek"
 ]
-
-# Keywords for inferring museum category from name (very rough)
-MUSEUM_CATEGORY_LABELS = {
-    "art": "Art museum",
-    "history": "History museum",
-    "science": "Science & technology museum",
-    "natural_history": "Natural history museum",
-    "open_air": "Open-air / outdoor museum",
-    "transport_industrial": "Transport & industrial museum",
-    "other": "Other / specialized museum",
-    "unknown": "Unknown",
-}
 
 # Keywords for language detection
 LANG_KEYWORDS = {
@@ -158,7 +159,7 @@ ACCESSIBILITY_PATTERNS = [
 # ------------- STEP 1: GET MUSEUM LIST FROM WIKIDATA -------------
 
 def get_nl_museums_cached() -> pd.DataFrame:
-    path = "nl_museums_wikidata.csv"  
+    path = "clean_nl_museums.csv"  
     if not os.path.exists(path):
         raise FileNotFoundError(
             f"{path} not found. Put the cleaned Wikidata CSV here."
@@ -208,10 +209,6 @@ def fetch_url(url):
         return None
 
 def find_candidate_links(base_url, html):
-    """
-    From a page HTML, find internal links that might be related to youth/family/education.
-    Uses parsel.Selector instead of BeautifulSoup.
-    """
     sel = Selector(text=html)
     candidates = set()
 
@@ -233,10 +230,6 @@ def find_candidate_links(base_url, html):
 
 
 def find_accessibility_pages(base_url, html):
-    """
-    From the homepage HTML, find internal links that likely contain
-    accessibility / practical info (museum-level, not activity-specific).
-    """
     sel = Selector(text=html)
     candidates = set()
 
@@ -272,10 +265,6 @@ def extract_text(html):
 
 
 def detect_languages(text, html):
-    """
-    Returns booleans for various languages based on page text and lang attributes.
-    Uses regex word boundaries to avoid matching 'en' in every Dutch 'en'.
-    """
     text_lower = text.lower()
 
     def match_lang(words):
@@ -374,10 +363,6 @@ def detect_museum_accessibility(base_url, html_home):
     """
     Detect accessibility at the museum level by scanning dedicated
     accessibility / visit pages linked from the homepage.
-
-    Returns:
-        has_access (bool),
-        description (comma-separated labels)
     """
     # 1. Check homepage itself
     combined_texts = [extract_text(html_home)]
@@ -397,7 +382,8 @@ def detect_museum_accessibility(base_url, html_home):
 
 def extract_age_info(text):
     """
-    Very rough extraction of age info. Returns a short string summarizing what was found.
+    Very rough extraction of age info. 
+    Returns a short string summarizing what was found.
     """
     tl = text.lower()
     matches = re.findall(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s*jaar", tl)
@@ -421,7 +407,7 @@ def extract_age_info(text):
         return ""
     return "; ".join(sorted(set(ages)))
 
-# -----------  file renaming  ------------
+# ----------- Step 5: Automated file renaming  ------------
 import sys
 
 def next_output_filename():
@@ -449,7 +435,7 @@ def next_output_filename():
     next_num = max(existing_nums) + 1 if existing_nums else 1
     return f"{prefix}{next_num}_{script_base}.csv"
 
-# ------------- STEP 5: CRAWL EACH MUSEUM -------------
+# ------------- STEP 6: CRAWL EACH MUSEUM -------------
 
 def crawl_museum(museum_row, activity_id_start=0):
     """
@@ -579,7 +565,7 @@ def main():
     successful_museums = 0
     tried_museums = 0
 
-    # NEW: global activity ID counter
+    # global activity ID counter
     next_activity_id = 1
 
     for row in museums_shuffled.itertuples(index=False):
@@ -596,11 +582,10 @@ def main():
             "museum_name": row.museum_name,
             "city": row.city,
             "website": row.website,
-            #"museum_type_label": getattr(row, "museum_type_label", ""),
             "museum_type_en": getattr(row, "museum_type_en", ""),
         }
 
-        # IMPORTANT: pass the current counter as start value
+        # pass the current counter as start value
         records = crawl_museum(museum_dict, activity_id_start=next_activity_id - 1)
 
         if records:
