@@ -4,5 +4,6 @@
 - **clean_nl_museums.csv** - the CSV file with manually cleaned and confirmed data scraped from Wikidata, about the Dutch museum websites.
 - **one_time_wiki_fetch.py** - the SPARQL protocol used to fetch the raw dataset from Wikidata, which after cleaning became the clean_nl_museums dataset.
 - **wikidata_translation.py** - the script using HuggingFace model Helsinki-NLP MarianMT, which translated all the Dutch labels into English for the clean_nl_museums dataset.
-- **Interface_Map.html** - the interface to access visual insights into the dataset and teh analysis. (As of 4 June 2026, it is work in progress).
-- **output1_0306.py** - the latest output from the newest version of the NMYA-scraper (analysis in progress, 4 June 2026).
+- **Interface_Map.html** - the interface to access visual insights into the dataset and the analysis. (As of 4 June 2026, it is work in progress).
+- **output1_1006.py** - the latest output from the newest version of the NMYA-scraper, manually cleaned by me (456 rows instead of previous 1117).
+- **analysis_museum_1006.ipynb** - the exploration of statistical correlations in the dataset (As of 11 June 2026).
