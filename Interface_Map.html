@@ -20,7 +20,7 @@
       --link-color:    #D0CCC2;   /* default edge colour         */
       --highlight:     #F0A500;   /* active / selected edge      */
       --bg:            #F7F5F0;   /* page background             */
-      --dark:          #1D2B3A;   /* header / dark elements      */
+      --dark:          #488224;   /* header / dark elements      */
       --sidebar-w:     270px;     /* sidebar width               */
     }
 
@@ -109,6 +109,16 @@
       margin: 2px 2px 0 0;
     }
     .city-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+
+    /* City search: fade nodes/links that do not match the city filter */
+    .node-museum.city-faded,
+    .node-museum.city-faded circle,
+    .node-criteria.city-faded,
+    .node-criteria.city-faded rect,
+    .links-group .link.city-faded {
+      opacity: 0.08;
+    } 
 
     /* ── FILTER BUTTONS ─────────────────────────────────────
        One button per criterion — click to highlight museums
@@ -296,7 +306,9 @@
   </div>
   <div class="header-right">
     Cultural Data Science Research<br>
-    Edit the DATABASE section in the &lt;script&gt; to update your data
+    This visualisation is a part of MA thesis project by <a href="https://www.linkedin.com/in/daria-ilina-68669026a/" target="_blank">Daria Ilina</a><br>
+    The map and the dataset are open source — see the code on <a href="https://github.com/ilidora/Thesis-Work/tree/8b6d66a705e5cebc224593b2467f7dc0aec5ebe9" target="_blank">GitHub</a>
+
   </div>
 </header>
 
@@ -312,11 +324,11 @@
       <div class="section-title">Legend</div>
       <div class="legend-item">
         <div class="legend-circle" style="background:var(--museum-fill)"></div>
-        Museum (size = no. of activities)
+        Museum
       </div>
       <div class="legend-item">
         <div class="legend-square" style="background:var(--criteria-fill)"></div>
-        Activity / Criterion
+        Activity
       </div>
       <div class="legend-item">
         <div class="legend-line" style="background:var(--link-color)"></div>
@@ -411,8 +423,8 @@
      D3.js — the charting/network library
      Loaded from a CDN so no install needed.
      ════════════════════════════════════════════════════════════ -->
+<script src="data.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-
 <script>
 /* ╔══════════════════════════════════════════════════════════════╗
    ║                        YOUR DATABASE                        ║
@@ -420,127 +432,30 @@
    ║  MUSEUMS, CRITERIA, and LINKS — nothing else.               ║
    ╚══════════════════════════════════════════════════════════════╝ */
 
-// ── MUSEUMS ────────────────────────────────────────────────────
-// Each museum needs a unique `id` (no spaces).
-// Add any extra fields you like — they appear in the info panel.
-// "city" determines the node colour (see CITY_COLORS below).
-
-const MUSEUMS = [
-  { id: "rijksmuseum",     label: "Rijksmuseum",              city: "Amsterdam",  note: "National art & history museum"    },
-  { id: "nemo",            label: "NEMO Science Museum",      city: "Amsterdam",  note: "Hands-on science for all ages"    },
-  { id: "naturalis",       label: "Naturalis",                city: "Leiden",     note: "Natural history & biodiversity"   },
-  { id: "tropenmuseum",    label: "Tropenmuseum",             city: "Amsterdam",  note: "World cultures & heritage"        },
-  { id: "scheepvaart",     label: "Scheepvaartmuseum",        city: "Amsterdam",  note: "Dutch maritime history"           },
-  { id: "gemeentemuseum",  label: "Gemeentemuseum Den Haag",  city: "Den Haag",   note: "Art & applied arts"               },
-  { id: "groninger",       label: "Groninger Museum",         city: "Groningen",  note: "Contemporary art & design"        },
-  { id: "micropia",        label: "Micropia",                 city: "Amsterdam",  note: "World of micro-organisms"         },
-  { id: "speelklok",       label: "Museum Speelklok",         city: "Utrecht",    note: "Automatic musical instruments"    },
-  { id: "openluchtmuseum", label: "Openluchtmuseum",          city: "Arnhem",     note: "Open-air Dutch heritage village"  },
-];
-
-// ── CRITERIA ───────────────────────────────────────────────────
-// These are the kid-activity dimensions you're comparing.
-// Add, rename, or remove as your research framework evolves.
-// `description` appears in tooltips and the info panel.
-
-const CRITERIA = [
-  { id: "workshops",       label: "Workshops",            description: "Hands-on creative sessions for kids"           },
-  { id: "interactive",     label: "Interactive exhibits", description: "Touch and play-based displays"                 },
-  { id: "audio_kids",      label: "Audio guides (kids)",  description: "Child-specific audio tour format"              },
-  { id: "kids_tours",      label: "Kids' guided tours",   description: "Tours specially designed for children"         },
-  { id: "play_areas",      label: "Play areas",           description: "Dedicated play spaces inside the museum"       },
-  { id: "family_tickets",  label: "Family tickets",       description: "Discounted pricing for families"               },
-  { id: "storytelling",    label: "Storytelling",         description: "Story-based live programming for children"     },
-  { id: "outdoor",         label: "Outdoor activities",   description: "Programmes that take place outside"            },
-  { id: "digital",         label: "Digital activities",   description: "Apps, tablets, AR/VR experiences"             },
-  { id: "junior_member",   label: "Junior membership",    description: "A dedicated kids' membership programme"        },
-];
-
-// ── CONNECTIONS (EDGES) ────────────────────────────────────────
-// A link means: this museum offers this criterion.
-// source = museum id, target = criterion id.
-// You can also add a `weight` field (1–5) if you want to encode
-// quality or depth — right now all edges are treated equally.
-
-const LINKS = [
-  // Rijksmuseum
-  { source: "rijksmuseum",     target: "workshops"      },
-  { source: "rijksmuseum",     target: "audio_kids"     },
-  { source: "rijksmuseum",     target: "kids_tours"     },
-  { source: "rijksmuseum",     target: "family_tickets" },
-  { source: "rijksmuseum",     target: "digital"        },
-
-  // NEMO Science Museum
-  { source: "nemo",            target: "interactive"    },
-  { source: "nemo",            target: "workshops"      },
-  { source: "nemo",            target: "play_areas"     },
-  { source: "nemo",            target: "family_tickets" },
-  { source: "nemo",            target: "digital"        },
-  { source: "nemo",            target: "outdoor"        },
-
-  // Naturalis
-  { source: "naturalis",       target: "interactive"    },
-  { source: "naturalis",       target: "kids_tours"     },
-  { source: "naturalis",       target: "storytelling"   },
-  { source: "naturalis",       target: "workshops"      },
-  { source: "naturalis",       target: "family_tickets" },
-
-  // Tropenmuseum
-  { source: "tropenmuseum",    target: "workshops"      },
-  { source: "tropenmuseum",    target: "kids_tours"     },
-  { source: "tropenmuseum",    target: "storytelling"   },
-  { source: "tropenmuseum",    target: "family_tickets" },
-
-  // Scheepvaartmuseum
-  { source: "scheepvaart",     target: "audio_kids"     },
-  { source: "scheepvaart",     target: "interactive"    },
-  { source: "scheepvaart",     target: "kids_tours"     },
-  { source: "scheepvaart",     target: "digital"        },
-  { source: "scheepvaart",     target: "family_tickets" },
-
-  // Gemeentemuseum Den Haag
-  { source: "gemeentemuseum",  target: "workshops"      },
-  { source: "gemeentemuseum",  target: "play_areas"     },
-  { source: "gemeentemuseum",  target: "kids_tours"     },
-
-  // Groninger Museum
-  { source: "groninger",       target: "workshops"      },
-  { source: "groninger",       target: "interactive"    },
-  { source: "groninger",       target: "digital"        },
-
-  // Micropia
-  { source: "micropia",        target: "interactive"    },
-  { source: "micropia",        target: "family_tickets" },
-  { source: "micropia",        target: "digital"        },
-
-  // Museum Speelklok
-  { source: "speelklok",       target: "kids_tours"     },
-  { source: "speelklok",       target: "workshops"      },
-  { source: "speelklok",       target: "family_tickets" },
-
-  // Openluchtmuseum
-  { source: "openluchtmuseum", target: "outdoor"        },
-  { source: "openluchtmuseum", target: "workshops"      },
-  { source: "openluchtmuseum", target: "play_areas"     },
-  { source: "openluchtmuseum", target: "storytelling"   },
-  { source: "openluchtmuseum", target: "family_tickets" },
-  { source: "openluchtmuseum", target: "junior_member"  },
-];
-
 // ── CITY COLOURS ───────────────────────────────────────────────
-// Museum nodes are coloured by city. Add a city here if you add
-// museums in a new city. Uses hex values (any valid CSS colour).
+// Top 10 most frequent cities get distinct colours; others fall back.
 
 const CITY_COLORS = {
-  "Amsterdam": "#2A6496",
-  "Leiden":    "#1A7A5E",
-  "Den Haag":  "#7B5EA7",
-  "Groningen": "#B05D2A",
-  "Utrecht":   "#A0522D",
-  "Arnhem":    "#4A7C6F",
+  "Amsterdam":      "#2A6496",
+  "Den Haag":       "#7B5EA7",
+  "Utrecht":        "#1A7A5E",
+  "Rotterdam":      "#B05D2A",
+  "Vijfhuizen":     "#A0522D",
+  "Groningen":      "#4A7C6F",
+  "Bergen":         "#C0392B",
+  "Zutphen":        "#16A085",
+  "Poederoijen":    "#8E44AD",
+  "Heerlen":        "#D35400",
 };
-const DEFAULT_CITY_COLOR = "#555"; // fallback for unlisted cities
+const DEFAULT_CITY_COLOR = "#555";
 
+// Colour museums by *digital activity profile* instead of city
+const DIGITAL_COLORS = {
+  none:  "#98ff98", // no digital activities
+  mixed: "#87ceeb", // mix of digital and non-digital
+  all:   "#8D3AD6", // all activities digital
+};
+const DEFAULT_DIGITAL_COLOR = "#777";
 
 /* ╔══════════════════════════════════════════════════════════════╗
    ║              VISUALISATION CODE STARTS HERE                 ║
@@ -577,16 +492,24 @@ document.getElementById("stat-m").textContent = MUSEUMS.length;
 document.getElementById("stat-c").textContent = CRITERIA.length;
 document.getElementById("stat-l").textContent = LINKS.length;
 
-// ── CITY LEGEND ─────────────────────────────────────────────────
-// Dynamically built from CITY_COLORS so it always stays in sync.
+// ── DIGITAL LEGEND ──────────────────────────────────────────────
+// Explains how museum node colours relate to digital activities.
 
 const cityLegend = document.getElementById("city-legend");
-Object.entries(CITY_COLORS).forEach(([city, color]) => {
+cityLegend.innerHTML = ""; // clear anything that might be there
+
+const digitalLegendItems = [
+  { label: "No digital activities",    color: DIGITAL_COLORS.none },
+  { label: "Mixed (some digital)",     color: DIGITAL_COLORS.mixed },
+  { label: "All activities digital",   color: DIGITAL_COLORS.all },
+];
+
+digitalLegendItems.forEach(item => {
   const row = document.createElement("div");
   row.className = "legend-item";
   row.innerHTML = `
-    <div class="legend-circle" style="background:${color}"></div>
-    ${city}
+    <div class="legend-circle" style="background:${item.color}"></div>
+    ${item.label}
   `;
   cityLegend.appendChild(row);
 });
@@ -625,6 +548,31 @@ clearBtn.onclick = () => {
 };
 filterContainer.appendChild(clearBtn);
 
+// ── CITY SEARCH UI ──────────────────────────────────────────────
+// A small text field to filter museums by city name (case-insensitive).
+
+const filterPanel = filterContainer.parentElement; // container that holds the buttons
+const citySearchWrapper = document.createElement("div");
+citySearchWrapper.className = "city-search-wrapper";
+citySearchWrapper.style.marginBottom = "8px";
+citySearchWrapper.innerHTML = `
+  <label for="city-search" style="display:block;font-size:11px;color:#999;margin-bottom:3px;">
+    Search by city
+  </label>
+  <input
+    id="city-search"
+    type="text"
+    placeholder="e.g. Amsterdam"
+    style="width:100%;padding:4px 6px;font-size:12px;border-radius:3px;border:1px solid #555;background:#111;color:#eee;"
+  />
+`;
+
+filterPanel.insertBefore(citySearchWrapper, filterContainer);
+
+const citySearchInput = citySearchWrapper.querySelector("#city-search");
+citySearchInput.addEventListener("input", () => {
+  applyCitySearch(citySearchInput.value);
+});
 
 // ── SVG SETUP ────────────────────────────────────────────────────
 // The SVG fills the .graph-area div completely.
@@ -671,13 +619,26 @@ const simulation = d3.forceSimulation(nodes)
 
 // ── DRAW LINKS (EDGES) ───────────────────────────────────────────
 // Lines drawn first so they sit behind the nodes visually.
+// We encode digital + age info on the link itself:
+// - colour: orange if hasDigital, grey otherwise
+// - thickness: thicker if there are activities for younger children
 
 const linkSel = container.append("g").attr("class", "links-group")
   .selectAll("line")
   .data(links)
   .join("line")
-  .attr("class", "link");
-
+  .attr("class", "link")
+  .attr("stroke", d => {
+    // LINKS should provide hasDigital (boolean) when you rebuild them from the CSV
+    return d.hasDigital ? "#ff9800" : "#999";
+  })
+  .attr("stroke-width", d => {
+    // LINKS should provide ageGroups: ["children", "teens", ...]
+    const ages = d.ageGroups || [];
+    if (ages.length === 0) return 1;
+    // if any child-oriented group, make the link thicker
+    return ages.includes("children") ? 2.5 : 1.5;
+  });
 
 // ── DRAW MUSEUM NODES ────────────────────────────────────────────
 // Circles whose radius scales with connection degree.
@@ -694,10 +655,39 @@ const museumSel = container.append("g").attr("class", "museum-nodes-group")
   .on("mousemove", moveTip)
   .on("mouseout",  hideTip);
 
-// The circle — r = base + scaled by degree so well-connected museums look bigger
 museumSel.append("circle")
   .attr("r", d => 14 + (degree[d.id] || 0) * 2)
-  .style("fill", d => CITY_COLORS[d.city] || DEFAULT_CITY_COLOR);
+  .style("fill", d => {
+    const acts = d.activities || [];
+    if (!acts.length) {
+      // No activities at all → treat as "none"
+      return DIGITAL_COLORS.none || DEFAULT_DIGITAL_COLOR;
+    }
+
+    let anyTrue = false;
+    let anyFalse = false;
+
+    acts.forEach(a => {
+      // Explicitly coerce to boolean; undefined / null / 0 → false
+      const v = !!a.has_digital;
+      if (v) anyTrue = true;
+      else   anyFalse = true;
+    });
+
+    let type;
+    if (!anyTrue) {
+      // no activity is marked digital
+      type = "none";
+    } else if (anyTrue && anyFalse) {
+      // at least one digital AND at least one non-digital
+      type = "mixed";
+    } else {
+      // all activities that have a record are digital
+      type = "all";
+    }
+
+    return DIGITAL_COLORS[type] || DEFAULT_DIGITAL_COLOR;
+  });
 
 // Label beneath each museum node
 museumSel.append("text")
@@ -831,43 +821,80 @@ function resetHighlight() {
 // a museum node or a criteria node.
 
 function renderInfoPanel(d) {
-  // Get connected items using the original LINKS (still has string IDs)
-  let connections, tagsHtml;
+  const info = document.getElementById("info-panel");
 
+  // Museum node: show a simple list of activities with age/digital tags
   if (d.type === "museum") {
-    // Which criteria does this museum offer?
-    connections = LINKS
-      .filter(l => l.source === d.id || l.target === d.id)
-      .map(l => (l.source === d.id ? l.target : l.source))
-      .map(id => CRITERIA.find(c => c.id === id))
-      .filter(Boolean);
-    tagsHtml = connections
-      .map(c => `<span class="info-tag criteria-tag" title="${c.description}">${c.label}</span>`)
-      .join("");
-  } else {
-    // Which museums offer this criterion?
-    connections = LINKS
-      .filter(l => l.source === d.id || l.target === d.id)
-      .map(l => (l.source === d.id ? l.target : l.source))
-      .map(id => MUSEUMS.find(m => m.id === id))
-      .filter(Boolean);
-    tagsHtml = connections
-      .map(m => `<span class="info-tag" style="background:#e6f0f6;color:#154e70">${m.label}</span>`)
-      .join("");
+    const cityColour = d.city ? (CITY_COLORS[d.city] || DEFAULT_CITY_COLOR) : null;
+    const cityDot = cityColour
+      ? `<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${cityColour};margin-right:4px;vertical-align:middle"></span>`
+      : "";
+
+    const activities = d.activities || [];
+
+    let html = `
+      <h3>${d.label}</h3>
+      <p class="sub">
+        ${d.city ? `${cityDot}${d.city} — ` : ""}${d.note || ""}
+      </p>
+      <p style="font-size:11px;color:#999;margin-bottom:6px">
+        Activities (${activities.length})
+      </p>
+    `;
+
+    if (activities.length === 0) {
+      html += `<p><em style="color:#bbb;font-size:12px">No activities recorded for this museum yet.</em></p>`;
+    } else {
+      html += "<ul>";
+      activities.forEach(a => {
+        const meta = [];
+        if (a.target_group) meta.push(a.target_group);
+        if (a.target_age)   meta.push(a.target_age);
+        if (a.has_digital)  meta.push("digital");
+        if (a.accessible)   meta.push("accessible");
+
+        html += `
+          <li>
+            ${a.url
+              ? `<a href="${a.url}" target="_blank" rel="noopener noreferrer">${a.title}</a>`
+              : a.title
+            }
+            ${meta.length
+              ? ` <span style="color:#777;font-size:11px;">(${meta.join(", ")})</span>`
+              : ""
+            }
+          </li>
+        `;
+      });
+      html += "</ul>";
+    }
+
+    info.innerHTML = html;
+    return;
   }
 
-  const cityColour = d.city ? (CITY_COLORS[d.city] || DEFAULT_CITY_COLOR) : null;
-  const cityDot    = cityColour
-    ? `<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${cityColour};margin-right:4px;vertical-align:middle"></span>`
-    : "";
+  // Criteria (theme) node: keep behaviour similar to before
+  // We show connected museums as pills.
+  let connections;
 
-  document.getElementById("info-panel").innerHTML = `
+  // Which museums offer this criterion/theme?
+  connections = LINKS
+    .filter(l => l.source === d.id || l.target === d.id)
+    .map(l => (l.source === d.id ? l.target : l.source))
+    .map(id => MUSEUMS.find(m => m.id === id))
+    .filter(Boolean);
+
+  const tagsHtml = connections
+    .map(m => `<span class="info-tag" style="background:#e6f0f6;color:#154e70">${m.label}</span>`)
+    .join("");
+
+  info.innerHTML = `
     <h3>${d.label}</h3>
     <p class="sub">
-      ${d.city ? `${cityDot}${d.city} — ` : ""}${d.note || d.description || ""}
+      ${d.description || ""}
     </p>
     <p style="font-size:11px;color:#999;margin-bottom:6px">
-      ${d.type === "museum" ? `Activities offered (${connections.length}):` : `Museums offering this (${connections.length}):`}
+      Museums offering this theme (${connections.length}):
     </p>
     ${tagsHtml || '<span style="color:#bbb;font-size:11px">None recorded yet</span>'}
   `;
@@ -893,6 +920,52 @@ function applyFilter(criterionId) {
     .classed("faded",       l => l.source.id !== criterionId && l.target.id !== criterionId);
 }
 
+// ── CITY SEARCH FILTER ──────────────────────────────────────────
+// Fades museums and themes that are not in / connected to the typed city.
+
+function applyCitySearch(term) {
+  term = (term || "").trim().toLowerCase();
+
+  // Clear city filter if the box is empty
+  if (!term) {
+    museumSel.classed("city-faded", false);
+    criteriaSel.classed("city-faded", false);
+    linkSel.classed("city-faded", false);
+    return;
+  }
+
+  // Which museums have a city that matches the term?
+  const matchingMuseums = new Set(
+    MUSEUMS
+      .filter(m => m.city && m.city.toLowerCase().includes(term))
+      .map(m => m.id)
+  );
+
+  // Fade museums that do NOT match
+  museumSel.classed("city-faded", d => !matchingMuseums.has(d.id));
+
+  // Criteria (themes) are faded if they have no matching museums
+  const matchingCriteria = new Set();
+  LINKS.forEach(l => {
+    const src = typeof l.source === "string" ? l.source : l.source.id;
+    const tgt = typeof l.target === "string" ? l.target : l.target.id;
+    if (matchingMuseums.has(src)) matchingCriteria.add(tgt);
+    if (matchingMuseums.has(tgt)) matchingCriteria.add(src);
+  });
+
+  criteriaSel.classed("city-faded", d => !matchingCriteria.has(d.id));
+
+  // Links are faded if their museum side is not in a matching city
+  linkSel.classed("city-faded", l => {
+    const src = typeof l.source === "string" ? l.source : l.source.id;
+    const tgt = typeof l.target === "string" ? l.target : l.target.id;
+    // We know museums are the ones with ids found in MUSEUMS; but simpler:
+    // fade if NEITHER end is a museum in matchingMuseums
+    const srcMatch = matchingMuseums.has(src);
+    const tgtMatch = matchingMuseums.has(tgt);
+    return !(srcMatch || tgtMatch);
+  });
+}
 
 // ── TOOLTIP ──────────────────────────────────────────────────────
 // A small floating label that follows the mouse on hover.
