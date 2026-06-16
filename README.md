@@ -8,7 +8,7 @@ Folder **data collection** consists of:
 - **clean_nl_museums.csv** - the CSV file with manually cleaned and confirmed data scraped from Wikidata, about the Dutch museum websites.
 - **one_time_wiki_fetch.py** - the SPARQL protocol used to fetch the raw dataset from Wikidata, which after cleaning became the clean_nl_museums dataset.
 - **wikidata_translation.py** - the script using HuggingFace model Helsinki-NLP MarianMT, which translated all the Dutch labels into English for the clean_nl_museums dataset.
-\\
+<br>
 Folder **mapping prep** contains:
 - **build_data_js.py** – the script converting a CSV dataset (**museum_dataset.csv**) into a JSON file.
 - **map_data.json** - the complete JSON dataset for the visualization in the map interface.
