@@ -16,3 +16,23 @@ Folder **mapping prep** contains:
 ## The Key Contributions
 - **Interface_Map.html** - the interface to access visual insights into the dataset and the analysis. (As of 16 June 2026, it is work in progress).
 - **museum dataset.csv** - the latest output from the newest version of the NMYA-scraper (work in progress, 11 June 2026).
+
+
+## Interface Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ilidora/Thesis-Work
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Thesis-Work
+   ```
+3. Run the server:
+   ```bash
+   python -m http.server 8000
+   ```
+5. Open your browser and visit:
+   ```
+   http://localhost:8000/Interface_Map.html
+   ```
