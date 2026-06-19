@@ -4,7 +4,7 @@ This repository contains the data and code for my MA thesis on **museum activiti
 ## Data Transparency Codebook
 Folder **data collection** consists of:
 - **Netherlands_Museum_Youth_Activity_Scraper.py** - (NMYA-scraper) the pipeline scraping information using Scrapy from a random list of 100 Dutch museums, and structures the into the assigned categories, relevant for my research. Uses a clean_nl_museums dataset.
--**raw_output_museums.csv** - the raw outputs of the scraping pipeline, pre-validation.
+- **raw_output_museums.csv** - the raw outputs of the scraping pipeline, pre-validation.
 - **clean_nl_museums.csv** - the CSV file with manually cleaned and confirmed data scraped from Wikidata, about the Dutch museum websites.
 - **one_time_wiki_fetch.py** - the SPARQL protocol used to fetch the raw dataset from Wikidata, which after cleaning became the clean_nl_museums dataset.
 - **wikidata_translation.py** - the script using HuggingFace model Helsinki-NLP MarianMT, which translated all the Dutch labels into English for the clean_nl_museums dataset.
