@@ -11,11 +11,11 @@ Folder **data collection** consists of:
 
 Folder **mapping prep** contains:
 - **build_data_js.py** – the script converting a CSV dataset (**museum_dataset.csv**) into a JSON file.
-- **map_data.json** - the complete JSON dataset for the visualization in the map interface.
 
 ## The Key Contributions
-- **Interface_Map.html** - the interface to access visual insights into the dataset and the analysis. (As of 16 June 2026, it is work in progress).
+- **Interface_Map.html** - the interface to access visual insights into the dataset and the analysis (expected to be launched online soon.)
 - **museum_dataset.csv** - the latest output from the newest version of the NMYA-scraper (the dataset will be gradually enriched beyond the current size).
+- **map_data.json** - the complete JSON dataset for the visualization in the map interface (derived from the CSV).
 - **analysis_notebook.ipynb** - the accompanying statistical exploration of the museum dataset, referred in the Results section of my thesis.
 - **map age dig city.twbx** - a supplementary visualisation for the chapters Results and Discussion; a packages Tableau worksheet with the geographic representation of correlations between target age, city, and digital experiences. This is a prototype of a function I would like to embed into my Map product.
 
