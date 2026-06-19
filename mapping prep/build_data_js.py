@@ -3,8 +3,8 @@ import json
 import re
 from collections import defaultdict
 
-INPUT_CSV = "output_clean_1106.csv"
-OUTPUT_JS = "data.js"
+INPUT_CSV = "museum_dataset.csv"
+OUTPUT_JS = "map_data_1906.js"
 
 # ---------- 1. Load data ----------
 
