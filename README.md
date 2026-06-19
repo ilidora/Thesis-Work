@@ -1,5 +1,5 @@
 # Master's Thesis
-This repository contains the data and code for my MA thesis on **museum activities for young (post)migrant audiences in the Netherlands**. The project maps how Dutch museums present youth-oriented events on their websites, with a focus on accessibility, language, target age groups, and the use of digital tools. <br> Using a human-in-the-loop scraping and cleaning pipeline, I assembled a dataset of 456 activities across 98 museums and visualized it through an interactive map. The repository includes the scraping scripts, data processing notebooks, the cleaned dataset, and the map interface. Together, they support a critical, data-driven reading of the Dutch museum landscape and are intended to enable transparent reuse, replication, and further research on cultural access and postmigration.
+This repository contains the data and code for my MA thesis on **museum activities for young (post)migrant audiences in the Netherlands**. The project maps how Dutch museums present youth-oriented events on their websites, with a focus on accessibility, language, target age groups, and the use of digital tools. <br> Using a human-in-the-loop scraping and cleaning pipeline, I assembled a dataset of 523 activities across 100 museums and visualized it through an interactive map. The repository includes the scraping scripts, data processing notebooks, the cleaned dataset, and the map interface. Together, they support a critical, data-driven reading of the Dutch museum landscape and are intended to enable transparent reuse, replication, and further research on cultural access and postmigration.
 
 ## Data Transparency Codebook
 Folder **data collection** consists of:
@@ -15,8 +15,9 @@ Folder **mapping prep** contains:
 
 ## The Key Contributions
 - **Interface_Map.html** - the interface to access visual insights into the dataset and the analysis. (As of 16 June 2026, it is work in progress).
-- **museum_dataset.csv** - the latest output from the newest version of the NMYA-scraper (work in progress, 11 June 2026).
+- **museum_dataset.csv** - the latest output from the newest version of the NMYA-scraper (the dataset will be gradually enriched beyond the current size).
 - **analysis_notebook.ipynb** - the accompanying statistical exploration of the museum dataset, referred in the Results section of my thesis.
+- **map age dig city.twbx** - a supplementary visualisation for the chapters Results and Discussion; a packages Tableau worksheet with the geographic representation of correlations between target age, city, and digital experiences. This is a prototype of a function I would like to embed into my Map product.
 
 ## Interface Setup
 
